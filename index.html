@@ -702,13 +702,12 @@ body::before {
   border-radius: 12px;
   padding: 16px 44px;
   font-size: 1rem;
-  animation: glow-pulse 3s ease-in-out infinite;
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, #c06838 0%, #a04e28 100%);
   box-shadow: 0 16px 48px rgba(200,114,74,.55);
   transform: translateY(-4px);
-  animation: none;
+  animation: glow-pulse 1.6s ease-in-out infinite;
 }
 @keyframes glow-pulse {
   0%,100% { box-shadow: 0 8px 28px rgba(200,114,74,.40), 0 0 0 0 rgba(200,114,74,.25); }
@@ -1788,6 +1787,13 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 .mb-tijd{font-size:.62rem;color:var(--co);font-weight:800}
 @media(max-width:640px){.maandbalk{grid-template-columns:repeat(3,1fr);gap:10px 4px}}
 @media(max-width:560px){.camille-journey{flex-direction:column;align-items:flex-start;gap:6px}.cj-arrow{transform:rotate(90deg);margin-left:18px}}
+
+/* Inklapbare rekentool */
+.bcc-toggle{display:inline-flex;align-items:center;gap:9px;margin-top:22px;padding:13px 26px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-weight:700;font-size:.92rem;cursor:pointer;transition:background .25s,border-color .25s}
+.bcc-toggle:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.4)}
+.bcc-toggle svg{transition:transform .3s}
+.bcc-toggle.open svg{transform:rotate(180deg)}
+.bcc-body[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -1870,7 +1876,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <label><input type="checkbox" class="fitq"> Ik wil zelf actief in mijn zaak staan</label>
       <label><input type="checkbox" class="fitq"> Ik kan (of wil leren) leidinggeven</label>
       <label><input type="checkbox" class="fitq"> Ik wil ondernemen binnen een bewezen formule</label>
-      <label><input type="checkbox" class="fitq"> Ik beschik (op termijn) over voldoende eigen middelen</label>
+      <label><input type="checkbox" class="fitq"> Ik beschik (op termijn) over &#8364;20.000 &#224; &#8364;75.000 eigen vermogen</label>
       <div class="fit-result" id="fitResult"></div>
     </div>
     <p class="fit-not reveal"><strong>Eerlijk is eerlijk &#8212; Coffee Fellows past waarschijnlijk niet bij je als</strong> je puur wilt investeren zonder zelf betrokken te zijn, geen mensen wilt aansturen, volledige conceptvrijheid zoekt, of horeca-uren niet in je leven passen.</p>
@@ -1883,7 +1889,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <div class="reveal"><div class="stat-num" data-static="1999">1999</div><div class="stat-lbl">Opgericht in M&#252;nchen</div></div>
     <div class="reveal" style="transition-delay:.1s"><div class="stat-num" data-target="370">0</div><div class="stat-lbl">Vestigingen wereldwijd</div></div>
     <div class="reveal" style="transition-delay:.2s"><div class="stat-num" data-target="10">0</div><div class="stat-lbl">Vestigingen in Nederland & groeiend</div></div>
-    <div class="reveal" style="transition-delay:.3s"><div class="stat-num" data-target="27" data-nosuffix="1">0</div><div class="stat-lbl">Jaar franchise-ervaring</div></div>
+    <div class="reveal" style="transition-delay:.3s"><div class="stat-num" data-target="9" data-nosuffix="1">0</div><div class="stat-lbl">Landen in Europa &amp; daarbuiten</div></div>
   </div>
 </div>
 
@@ -2104,7 +2110,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
             <div class="cr"><span class="cr-l">Franchisevergoeding</span><span class="cr-v">5% netto-omzet</span></div>
             <div class="cr"><span class="cr-l">Marketingbijdrage</span><span class="cr-v">2% netto-omzet</span></div>
             <p style="font-size:.74rem;color:var(--gr);margin:6px 0 10px;line-height:1.55">Daarvoor krijg je: het merk, de inkoopkracht, training, dagelijkse begeleiding &#233;n landelijke marketing.</p>
-            <div class="cr"><span class="cr-l">Eigen vermogen</span><span class="cr-v">v.a. &#8364;80.000</span></div>
+            <div class="cr"><span class="cr-l">Eigen vermogen</span><span class="cr-v">&#8364;20.000 &#8211; &#8364;75.000</span></div>
             <div class="cr"><span class="cr-l">Investeringsvolume</span><span class="cr-v">&#8364;195k &#8211; &#8364;350k</span></div>
           </div>
           <div class="rr-meter">
@@ -2142,9 +2148,14 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <div style="text-align:center;max-width:620px;margin:0 auto">
       <span class="s-tag" style="color:var(--col)">Business Case Calculator</span>
       <h2 class="s-h2">Bouw jouw eigen<br><em>business case</em></h2>
-      <p class="s-lead">Stel jouw situatie in en zie direct een indicatieve investerings- en exploitatiebegroting — inclusief drie scenario's.</p>
+      <p class="s-lead">Wil je met cijfers spelen? Stel jouw situatie in en zie direct een indicatieve investerings- en exploitatiebegroting — inclusief drie scenario's.</p>
+      <button type="button" class="bcc-toggle" id="bccToggle" aria-expanded="false" aria-controls="bccBody" onclick="toggleCalc()">
+        <span id="bccToggleTxt">Open de rekentool</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
     </div>
 
+    <div id="bccBody" class="bcc-body" hidden>
     <div class="bcc-disclaimer reveal">
       <span class="bcc-disclaimer-icon">⚖️</span>
       <span>Dit is een <strong style="color:rgba(255,255,255,.65)">indicatief rekenmodel ter oriëntatie</strong> — geen prognose, garantie of aanbod van Coffee Fellows. Alle uitkomsten zijn schattingen op basis van de door jou ingevulde parameters. In het kader van de Wet Franchise ontvang je bij een serieus traject altijd een formeel pre-contractueel informatiedocument.</span>
@@ -2194,7 +2205,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div class="inv-card">
           <div class="inv-card-label">Eigen inbreng (20%)</div>
           <span class="inv-card-val" id="invEigen">€ 60.000</span>
-          <div class="inv-card-sub">minimaal benodigde</div>
+          <div class="inv-card-sub">rekenvoorbeeld &#8212; in de praktijk €20k–€75k</div>
         </div>
         <div class="inv-card">
           <div class="inv-card-label">Financiering (80%)</div>
@@ -2270,6 +2281,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 
     <div style="text-align:center;margin-top:52px">
       <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20wil%20mijn%20business%20case%20bespreken!" target="_blank" class="btn-primary" style="display:inline-block">Bespreek jouw business case →</a>
+    </div>
     </div>
 
   </div>
@@ -2366,7 +2378,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     </div>
     <div class="faq-wrap">
       <div class="faq-item reveal" style="transition-delay:.04s"><button class="faq-q" onclick="tFaq(this)">Ik heb geen horecaervaring. Is dat erg?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Nee &#8212; horecaervaring is geen vereiste.</strong> Passie, doorzettingsvermogen en inzet zijn de werkelijke succesfactoren. Je draait v&#243;&#243;r de opening 4 weken fulltime mee in een bestaande vestiging.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.08s"><button class="faq-q" onclick="tFaq(this)">Ik heb niet genoeg eigen vermogen. Houdt het dan op?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Niet direct &#8212; er is vaak meer mogelijk dan je denkt.</strong> Voor het franchisemodel is indicatief v.a. &#8364;80.000 eigen vermogen nodig. Via ons netwerk van accountants en financieringsspecialisten helpen we je de juiste weg te vinden &#8212; ook als je er nog niet helemaal bent.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.08s"><button class="faq-q" onclick="tFaq(this)">Ik heb niet genoeg eigen vermogen. Houdt het dan op?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Niet direct &#8212; er is vaak meer mogelijk dan je denkt.</strong> Partners starten doorgaans met &#8364;20.000 tot &#8364;75.000 eigen vermogen, afhankelijk van de locatie, de staat van het pand en je financieringsplan. Via ons netwerk van accountants en financieringsspecialisten kijken we samen wat in jouw situatie haalbaar is.</p></div></div>
 
       <div class="faq-item reveal" style="transition-delay:.16s"><button class="faq-q" onclick="tFaq(this)">Ik twijfel nog. Kan ik toch contact opnemen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Absoluut &#8212; alles is volledig vrijblijvend, van beide kanten.</strong> Je kunt op elk moment in het traject besluiten dat het toch niets voor je is.</p></div></div>
       <div class="faq-item reveal" style="transition-delay:.2s"><button class="faq-q" onclick="tFaq(this)">Kan ik meerdere vestigingen runnen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Ja &#8212; groeiambitie wordt aangemoedigd.</strong> Er zijn al meerdere partners die twee of meer vestigingen aansturen.</p></div></div>
@@ -2819,6 +2831,28 @@ document.querySelectorAll('.btn-primary, .nav-cta').forEach(btn => {
   btn.addEventListener('mouseleave', () => {
     btn.style.transform = '';
   });
+});
+
+// Rekentool in-/uitklappen
+function toggleCalc(open){
+  var body = document.getElementById('bccBody');
+  var btn  = document.getElementById('bccToggle');
+  var txt  = document.getElementById('bccToggleTxt');
+  var willOpen = (open === true) ? true : body.hasAttribute('hidden');
+  if (willOpen) body.removeAttribute('hidden'); else body.setAttribute('hidden','');
+  btn.classList.toggle('open', willOpen);
+  btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  txt.textContent = willOpen ? 'Verberg de rekentool' : 'Open de rekentool';
+  if (willOpen) {
+    body.querySelectorAll('.reveal,.rl,.rr').forEach(function(el){ el.classList.add('visible'); });
+    updateInvestering(); updatePL();
+  }
+}
+function openCalcFromHash(){ if (location.hash === '#businesscase') toggleCalc(true); }
+window.addEventListener('hashchange', openCalcFromHash);
+openCalcFromHash();
+document.querySelectorAll('a[href="#businesscase"]').forEach(function(a){
+  a.addEventListener('click', function(){ toggleCalc(true); });
 });
 
 // Fit-checklist
