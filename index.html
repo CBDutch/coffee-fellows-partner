@@ -1734,6 +1734,60 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 .meeloop-blok{margin-top:20px;background:linear-gradient(120deg,var(--br),var(--brm));border-radius:18px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .meeloop-t{color:#fff;font-weight:700;font-size:1.15rem}
 .meeloop-b{color:rgba(255,255,255,.65);font-size:.88rem;margin-top:6px;max-width:480px}
+
+/* Enschede-kans + kanskaarten */
+.kans-blok{background:linear-gradient(120deg,#fdf3ec,#fbe9dc);border:1px solid #f0d5c2;border-radius:16px;padding:22px 24px;margin-bottom:26px}
+.kans-badge{display:inline-block;background:var(--co);color:#fff;font-size:.64rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:99px;margin-bottom:10px}
+.kans-t{font-weight:800;color:var(--br);font-size:1.02rem;line-height:1.35}
+.kans-b{font-size:.84rem;color:var(--gr);margin-top:6px;line-height:1.6}
+.kans-cta{display:inline-block;margin-top:12px;color:var(--co);font-weight:700;font-size:.88rem;text-decoration:none}
+.kk-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.kk-grid{grid-template-columns:1fr}}
+.kk-card{background:var(--wh);border:1px solid var(--crd);border-radius:12px;padding:14px 16px;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.kk-card:hover{box-shadow:0 4px 18px rgba(58,26,6,.1);transform:translateY(-2px)}
+.kk-city{font-weight:700;font-size:.86rem;color:var(--br)}
+.kk-meta{font-size:.72rem;color:var(--gr);margin-top:3px}
+.kk-status{display:inline-block;margin-top:8px;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
+.kk-status.zoek{background:#dcfce7;color:#166534}
+.kk-status.ori{background:#fef3c7;color:#92400e}
+
+/* Chiel + leadformulier */
+.chiel-blok{display:flex;align-items:center;gap:18px;max-width:560px;margin:44px auto 0;text-align:left;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px 24px}
+.chiel-blok img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--co);flex-shrink:0}
+.chiel-naam{font-weight:800;color:#fff;font-size:1rem}
+.chiel-rol{font-size:.74rem;color:rgba(255,255,255,.55);margin-top:2px}
+.chiel-quote{font-size:.86rem;color:rgba(255,255,255,.75);margin-top:8px;line-height:1.55;font-style:italic}
+.lead-blok{max-width:560px;margin:16px auto 0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px 24px}
+.lead-t{font-weight:700;color:#fff;font-size:.92rem;margin-bottom:12px;text-align:left}
+.lead-form{display:flex;gap:8px;flex-wrap:wrap}
+.lead-form input[type=text],.lead-form input[type=tel]{flex:1 1 140px;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.95);font-family:inherit;font-size:.88rem;color:var(--tx)}
+.lead-form button{padding:12px 22px;border-radius:10px;border:none;background:var(--co);color:#fff;font-family:inherit;font-weight:700;font-size:.88rem;cursor:pointer;transition:background .2s}
+.lead-form button:hover{background:#b05e38}
+.lead-privacy{font-size:.7rem;color:rgba(255,255,255,.45);margin-top:10px;text-align:left}
+.lead-privacy a{color:rgba(255,255,255,.6)}
+@media(max-width:560px){.chiel-blok{flex-direction:column;text-align:center}.lead-form{flex-direction:column}}
+
+/* Vergelijking */
+.verg-blok{max-width:760px;margin:40px auto 0;background:var(--wh);border-radius:16px;padding:26px 28px;box-shadow:0 2px 18px rgba(58,26,6,.07)}
+.verg-t{font-weight:800;color:var(--br);font-size:1.02rem;text-align:center;margin-bottom:18px}
+.verg-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.verg-grid{grid-template-columns:1fr}}
+.verg-col{border:1px solid var(--crd);border-radius:12px;padding:16px 18px}
+.verg-col.cf{background:#fdf3ec;border-color:#f0d5c2}
+.verg-h{font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gr);margin-bottom:10px}
+.verg-col.cf .verg-h{color:var(--co)}
+.verg-col ul{padding-left:18px;margin:0}
+.verg-col li{font-size:.82rem;color:var(--gr);line-height:1.55;margin-bottom:6px}
+.verg-eerlijk{font-size:.76rem;color:var(--gr);font-style:italic;text-align:center;margin-top:14px}
+/* Maandbalk stappenplan */
+.maandbalk{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;max-width:760px;margin:32px auto 40px}
+.mb-seg{text-align:center}
+.mb-bar{height:6px;border-radius:99px;background:var(--crd)}
+.mb-seg.hot .mb-bar{background:var(--co)}
+.mb-lbl{font-size:.64rem;font-weight:700;color:var(--gr);margin-top:6px;text-transform:uppercase;letter-spacing:.04em}
+.mb-tijd{font-size:.62rem;color:var(--co);font-weight:800}
+@media(max-width:640px){.maandbalk{grid-template-columns:repeat(3,1fr);gap:10px 4px}}
+@media(max-width:560px){.camille-journey{flex-direction:column;align-items:flex-start;gap:6px}.cj-arrow{transform:rotate(90deg);margin-left:18px}}
 </style>
 </head>
 <body>
@@ -1838,9 +1892,9 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="container">
     <div class="about-grid">
       <div class="about-imgstack rl">
-        <img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Coffee Fellows interieur">
-        <img src="https://images.prismic.io/coffeefellows-website/aN5CU55xUNkB1Zb5_Franchiseportal_Bilder_1848x1040_6.jpg?auto=format,compress" alt="Coffee Fellows team">
-        <img src="https://images.prismic.io/coffeefellows-website/aN5KpJ5xUNkB1Zlo_Franchiseportal_Bilder_1848x1040_5.jpg?auto=format,compress" alt="Coffee Fellows barista">
+        <img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Coffee Fellows interieur" loading="lazy">
+        <img src="https://images.prismic.io/coffeefellows-website/aN5CU55xUNkB1Zb5_Franchiseportal_Bilder_1848x1040_6.jpg?auto=format,compress" alt="Coffee Fellows team" loading="lazy">
+        <img src="https://images.prismic.io/coffeefellows-website/aN5KpJ5xUNkB1Zlo_Franchiseportal_Bilder_1848x1040_5.jpg?auto=format,compress" alt="Coffee Fellows barista" loading="lazy">
       </div>
       <div class="rr">
         <span class="s-tag">Ons verhaal</span>
@@ -1961,14 +2015,14 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px">
       <div style="background:var(--wh);border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(58,26,6,.07)">
-        <img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Mohammed &amp; Lara" style="width:100%;height:160px;object-fit:cover;object-position:center 20%;display:block">
+        <img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Mohammed &amp; Lara" style="width:100%;height:160px;object-fit:cover;object-position:center 20%;display:block" loading="lazy">
         <div style="padding:20px 22px">
           <div class="story-name">Mohammed &amp; Lara &#8212; Coffee Fellows partners</div>
           <p class="story-quote" style="font-size:.9rem">Zonder uitgebreide horeca-achtergrond bij Coffee Fellows terechtgekomen &#8212; maar van dag &#233;&#233;n volledig all-in gegaan. Vorig jaar namen we onze tweede locatie over.</p>
         </div>
       </div>
       <div style="background:var(--wh);border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(58,26,6,.07)">
-        <img src="https://images.prismic.io/coffeefellows-website/aN45Xp5xUNkB1ZTn_OmarPartnerfoto.jpg?auto=format,compress&rect=0,0,1321,1641&w=1321&h=1641" alt="Omar" style="width:100%;height:160px;object-fit:cover;object-position:center 35%;display:block">
+        <img src="https://images.prismic.io/coffeefellows-website/aN45Xp5xUNkB1ZTn_OmarPartnerfoto.jpg?auto=format,compress&rect=0,0,1321,1641&w=1321&h=1641" alt="Omar" style="width:100%;height:160px;object-fit:cover;object-position:center 35%;display:block" loading="lazy">
         <div style="padding:20px 22px">
           <div class="story-name">Omar &#8212; Coffee Fellows partner</div>
           <p class="story-quote" style="font-size:.9rem">Van barista tot ploegchef &#8212; en parallel aan mijn studie bleef ik mijn droom nastreven. Sinds 2024 leid ik vol trots mijn eigen vestiging, precies op de plek waar de oprichters begonnen.</p>
@@ -2019,10 +2073,10 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       </div>
       <div>
         <div class="prod-imgs">
-          <img src="https://images.prismic.io/coffeefellows-website/9e5b7203-5a83-4cf0-ac99-2a5018a29cd7_Iced_Cappuccino_Kaffee.jpg?auto=compress,format" alt="Koffie specialty" style="object-position:center 40%">
-          <img src="https://images.prismic.io/coffeefellows-website/aNz5Zp5xUNkB1Vkl_HeroImage_Produkte_25_Snacks_2.jpg?auto=format,compress" alt="Verse bagels">
-          <img src="https://images.prismic.io/coffeefellows-website/ah0m6geQX7-eWd6o_Produkte_26_HeroImage_Cherry.jpg?auto=format,compress" alt="Cherry specials">
-          <img src="https://images.prismic.io/coffeefellows-website/aN0LbJ5xUNkB1WZ0_Collagen_Produkte_25_Sweets.jpg?auto=format,compress" alt="Sweets en taarten">
+          <img src="https://images.prismic.io/coffeefellows-website/9e5b7203-5a83-4cf0-ac99-2a5018a29cd7_Iced_Cappuccino_Kaffee.jpg?auto=compress,format" alt="Koffie specialty" style="object-position:center 40%" loading="lazy">
+          <img src="https://images.prismic.io/coffeefellows-website/aNz5Zp5xUNkB1Vkl_HeroImage_Produkte_25_Snacks_2.jpg?auto=format,compress" alt="Verse bagels" loading="lazy">
+          <img src="https://images.prismic.io/coffeefellows-website/ah0m6geQX7-eWd6o_Produkte_26_HeroImage_Cherry.jpg?auto=format,compress" alt="Cherry specials" loading="lazy">
+          <img src="https://images.prismic.io/coffeefellows-website/aN0LbJ5xUNkB1WZ0_Collagen_Produkte_25_Sweets.jpg?auto=format,compress" alt="Sweets en taarten" loading="lazy">
         </div>
       </div>
     </div>
@@ -2039,7 +2093,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     </div>
     <div class="models-grid">
       <div class="m-card feat rr">
-        <div class="m-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Franchise model"></div>
+        <div class="m-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Franchise model" loading="lazy"></div>
         <div class="m-body">
           <span class="m-badge">Volledig eigenaarschap</span>
           <h3 class="m-title">Het Franchisemodel</h3>
@@ -2062,6 +2116,20 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       </div>
     </div>
     <p style="text-align:center;font-size:.78rem;color:var(--gr);margin-top:20px;font-style:italic">Alle genoemde bedragen zijn indicatief en afhankelijk van locatie, omvang, financiering en gekozen samenwerkingsmodel.</p>
+    <div class="verg-blok reveal">
+      <div class="verg-t">Zelf een koffiezaak beginnen &#8212; of met Coffee Fellows?</div>
+      <div class="verg-grid">
+        <div class="verg-col">
+          <div class="verg-h">Zelfstandig starten</div>
+          <ul><li>Merk, concept en menukaart zelf uitvinden</li><li>Zelf leveranciers zoeken en onderhandelen</li><li>Leren door duur vallen en opstaan</li><li>Volledige vrijheid &#8212; en volledig alleen</li></ul>
+        </div>
+        <div class="verg-col cf">
+          <div class="verg-h">Met Coffee Fellows</div>
+          <ul><li>Bewezen formule en merk sinds 1999</li><li>Centrale inkoopkracht met vaste prijzen</li><li>4 weken training v&#243;&#243;r je opent</li><li>Formule-kaders &#233;n lokale ruimte &#8212; nooit alleen</li></ul>
+        </div>
+      </div>
+      <p class="verg-eerlijk">Eerlijk: je betaalt er een fee voor (5% + 2%) en werkt binnen de formule. Dat is de ruil &#8212; en die moet bij je passen.</p>
+    </div>
     <p style="text-align:center;margin-top:18px"><a href="#businesscase" style="color:var(--co);font-weight:700;font-size:.92rem;text-decoration:none">Wil je rekenen? Bouw je eigen business case &#8595;</a></p>
   </div>
 </section>
@@ -2223,36 +2291,32 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div style="margin-bottom:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#166534;margin-bottom:14px;padding-left:12px;border-left:2px solid #22c55e">Actieve vestigingen</div>
           <div style="display:flex;flex-direction:column;gap:7px">
-            <div class="loc-item" data-city="Amsterdam (Olympisch Stadion)" onmouseenter="highlightCity('Amsterdam (Olympisch Stadion)')" onmouseleave="unhighlightCity('Amsterdam (Olympisch Stadion)')"><div class="loc-dot a"></div><span class="loc-name">Amsterdam (Olympisch Stadion)</span></div>
-            <div class="loc-item" data-city="Halfweg" onmouseenter="highlightCity('Halfweg')" onmouseleave="unhighlightCity('Halfweg')"><div class="loc-dot a"></div><span class="loc-name">Halfweg</span></div>
-            <div class="loc-item" data-city="Den Haag – locatie 1" onmouseenter="highlightCity('Den Haag – locatie 1')" onmouseleave="unhighlightCity('Den Haag – locatie 1')"><div class="loc-dot a"></div><span class="loc-name">Den Haag (2 locaties)</span></div>
-            <div class="loc-item" data-city="Soest" onmouseenter="highlightCity('Soest')" onmouseleave="unhighlightCity('Soest')"><div class="loc-dot a"></div><span class="loc-name">Soest</span></div>
-            <div class="loc-item" data-city="Apeldoorn" onmouseenter="highlightCity('Apeldoorn')" onmouseleave="unhighlightCity('Apeldoorn')"><div class="loc-dot a"></div><span class="loc-name">Apeldoorn</span></div>
-            <div class="loc-item" data-city="Eindhoven" onmouseenter="highlightCity('Eindhoven')" onmouseleave="unhighlightCity('Eindhoven')"><div class="loc-dot a"></div><span class="loc-name">Eindhoven</span></div>
-            <div class="loc-item" data-city="Arnemuiden" onmouseenter="highlightCity('Arnemuiden')" onmouseleave="unhighlightCity('Arnemuiden')"><div class="loc-dot a"></div><span class="loc-name">Arnemuiden</span></div>
-            <div class="loc-item" data-city="Rilland" onmouseenter="highlightCity('Rilland')" onmouseleave="unhighlightCity('Rilland')"><div class="loc-dot a"></div><span class="loc-name">Rilland</span></div>
-            <div class="loc-item" data-city="Enschede (ter overname aangeboden)" onmouseenter="highlightCity('Enschede (ter overname aangeboden)')" onmouseleave="unhighlightCity('Enschede (ter overname aangeboden)')"><div class="loc-dot a"></div><span class="loc-name">Enschede <span style="font-size:.68rem;font-weight:600;color:var(--co)">(ter overname)</span></span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Amsterdam (Olympisch Stadion)" onmouseenter="highlightCity('Amsterdam (Olympisch Stadion)')" onclick="highlightCity('Amsterdam (Olympisch Stadion)')" onmouseleave="unhighlightCity('Amsterdam (Olympisch Stadion)')"><div class="loc-dot a"></div><span class="loc-name">Amsterdam (Olympisch Stadion)</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Halfweg" onmouseenter="highlightCity('Halfweg')" onclick="highlightCity('Halfweg')" onmouseleave="unhighlightCity('Halfweg')"><div class="loc-dot a"></div><span class="loc-name">Halfweg</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Den Haag – locatie 1" onmouseenter="highlightCity('Den Haag – locatie 1')" onclick="highlightCity('Den Haag – locatie 1')" onmouseleave="unhighlightCity('Den Haag – locatie 1')"><div class="loc-dot a"></div><span class="loc-name">Den Haag (2 locaties)</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Soest" onmouseenter="highlightCity('Soest')" onclick="highlightCity('Soest')" onmouseleave="unhighlightCity('Soest')"><div class="loc-dot a"></div><span class="loc-name">Soest</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Apeldoorn" onmouseenter="highlightCity('Apeldoorn')" onclick="highlightCity('Apeldoorn')" onmouseleave="unhighlightCity('Apeldoorn')"><div class="loc-dot a"></div><span class="loc-name">Apeldoorn</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Eindhoven" onmouseenter="highlightCity('Eindhoven')" onclick="highlightCity('Eindhoven')" onmouseleave="unhighlightCity('Eindhoven')"><div class="loc-dot a"></div><span class="loc-name">Eindhoven</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Arnemuiden" onmouseenter="highlightCity('Arnemuiden')" onclick="highlightCity('Arnemuiden')" onmouseleave="unhighlightCity('Arnemuiden')"><div class="loc-dot a"></div><span class="loc-name">Arnemuiden</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Rilland" onmouseenter="highlightCity('Rilland')" onclick="highlightCity('Rilland')" onmouseleave="unhighlightCity('Rilland')"><div class="loc-dot a"></div><span class="loc-name">Rilland</span></div>
+            <div class="loc-item" role="button" tabindex="0" data-city="Enschede (ter overname aangeboden)" onmouseenter="highlightCity('Enschede (ter overname aangeboden)')" onclick="highlightCity('Enschede (ter overname aangeboden)')" onmouseleave="unhighlightCity('Enschede (ter overname aangeboden)')"><div class="loc-dot a"></div><span class="loc-name">Enschede <span style="font-size:.68rem;font-weight:600;color:var(--co)">(ter overname)</span></span></div>
           </div>
+        </div>
+        <div class="kans-blok reveal">
+          <div class="kans-badge">&#128273; Direct starten?</div>
+          <div class="kans-t">In Enschede staat een draaiende vestiging klaar voor overname</div>
+          <p class="kans-b">Instappen in een lopende zaak met bestaand team en vaste gasten &#8212; zo begon Camille ook. Wees er snel bij.</p>
+          <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20interesse%20in%20de%20overname%20van%20de%20vestiging%20in%20Enschede!" target="_blank" class="kans-cta">Vraag naar de overname &#8594;</a>
         </div>
         <div>
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#22c55e;margin-bottom:14px;padding-left:12px;border-left:2px solid #22c55e">Wij zoeken partners in</div>
-          <div style="display:flex;flex-wrap:wrap;gap:7px">
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Rotterdam" onmouseenter="highlightCity('Rotterdam')" onmouseleave="unhighlightCity('Rotterdam')">Rotterdam</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Haarlem" onmouseenter="highlightCity('Haarlem')" onmouseleave="unhighlightCity('Haarlem')">Haarlem</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Delft" onmouseenter="highlightCity('Delft')" onmouseleave="unhighlightCity('Delft')">Delft</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Groningen" onmouseenter="highlightCity('Groningen')" onmouseleave="unhighlightCity('Groningen')">Groningen</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Maastricht" onmouseenter="highlightCity('Maastricht')" onmouseleave="unhighlightCity('Maastricht')">Maastricht</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Breda" onmouseenter="highlightCity('Breda')" onmouseleave="unhighlightCity('Breda')">Breda</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Tilburg" onmouseenter="highlightCity('Tilburg')" onmouseleave="unhighlightCity('Tilburg')">Tilburg</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Nijmegen" onmouseenter="highlightCity('Nijmegen')" onmouseleave="unhighlightCity('Nijmegen')">Nijmegen</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Arnhem" onmouseenter="highlightCity('Arnhem')" onmouseleave="unhighlightCity('Arnhem')">Arnhem</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Zwolle" onmouseenter="highlightCity('Zwolle')" onmouseleave="unhighlightCity('Zwolle')">Zwolle</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Leeuwarden" onmouseenter="highlightCity('Leeuwarden')" onmouseleave="unhighlightCity('Leeuwarden')">Leeuwarden</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Leiden" onmouseenter="highlightCity('Leiden')" onmouseleave="unhighlightCity('Leiden')">Leiden</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Amsterdam – nieuwe locatie" onmouseenter="highlightCity('Amsterdam – nieuwe locatie')" onmouseleave="unhighlightCity('Amsterdam – nieuwe locatie')">Amsterdam</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Utrecht" onmouseenter="highlightCity('Utrecht')" onmouseleave="unhighlightCity('Utrecht')">Utrecht</span>
-            <span style="background:#dcfce7;color:#166534;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:6px;cursor:pointer" data-city="Den Bosch" onmouseenter="highlightCity('Den Bosch')" onmouseleave="unhighlightCity('Den Bosch')">Den Bosch</span>
+          <div class="kk-grid">
+            <div class="kk-card" data-city="Rotterdam" onmouseenter="highlightCity('Rotterdam')" onmouseleave="unhighlightCity('Rotterdam')" onclick="highlightCity('Rotterdam')"><div class="kk-city">Coffee Fellows Rotterdam</div><div class="kk-meta">Gezocht: franchisepartner &middot; nieuwe locatie</div><div class="kk-status zoek">Actief gezocht</div></div>
+            <div class="kk-card" data-city="Utrecht" onmouseenter="highlightCity('Utrecht')" onmouseleave="unhighlightCity('Utrecht')" onclick="highlightCity('Utrecht')"><div class="kk-city">Coffee Fellows Utrecht</div><div class="kk-meta">Gezocht: franchisepartner &middot; centrum / high traffic</div><div class="kk-status zoek">Actief gezocht</div></div>
+            <div class="kk-card" data-city="Groningen" onmouseenter="highlightCity('Groningen')" onmouseleave="unhighlightCity('Groningen')" onclick="highlightCity('Groningen')"><div class="kk-city">Coffee Fellows Groningen</div><div class="kk-meta">Universiteitsstad &middot; sterke daghoreca</div><div class="kk-status ori">Ori&#235;ntatie</div></div>
+            <div class="kk-card" data-city="Breda" onmouseenter="highlightCity('Breda')" onmouseleave="unhighlightCity('Breda')" onclick="highlightCity('Breda')"><div class="kk-city">Coffee Fellows Breda</div><div class="kk-meta">Gezocht: franchisepartner &middot; binnenstad</div><div class="kk-status ori">Ori&#235;ntatie</div></div>
           </div>
+          <p style="font-size:.78rem;color:var(--gr);margin-top:14px;line-height:1.7">Ook in gesprek over: Haarlem &middot; Delft &middot; Maastricht &middot; Tilburg &middot; Nijmegen &middot; Arnhem &middot; Zwolle &middot; Leeuwarden &middot; Leiden &middot; Amsterdam &middot; Den Bosch</p>
           <p style="font-size:.78rem;color:var(--gr);margin-top:16px;line-height:1.6">Heb jij een locatie in gedachten of woon je in een van deze steden? Neem contact op &#8212; we verkennen samen de kansen.</p>
           <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20interesse%20in%20een%20Coffee%20Fellows%20locatie%20in%20mijn%20regio!" target="_blank" style="display:inline-block;margin-top:16px;background:var(--co);color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.85rem;text-decoration:none;transition:all .3s">Vraag naar beschikbaarheid &#8594;</a>
         </div>
@@ -2269,17 +2333,25 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <h2 class="s-h2">Partner worden<br>in <em>10 stappen</em></h2>
       <p style="font-size:.88rem;color:var(--gr);line-height:1.65;margin-top:8px">Van eerste kennismaking tot opening &#8212; reken op 3&#8211;6 maanden voor het selectietraject en daarna nog zo'n 3 maanden tot de openingsdag.</p>
     </div>
+    <div class="maandbalk reveal">
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Kennismaken</div><div class="mb-tijd">Maand 0&#8211;1</div></div>
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Financi&#235;n</div><div class="mb-tijd">Maand 1&#8211;2</div></div>
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Locatie</div><div class="mb-tijd">Maand 2&#8211;4</div></div>
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Contract</div><div class="mb-tijd">Maand 4</div></div>
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Training</div><div class="mb-tijd">Maand 5</div></div>
+      <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Opening</div><div class="mb-tijd">Maand 6&#8211;9</div></div>
+    </div>
     <div class="timeline">
       <div class="t-row reveal" style="transition-delay:.04s"><div class="t-circle">1</div><div class="t-content"><div class="t-tag">Begin hier</div><div class="t-title">Ori&#235;ntatie &#8212; bezoek een vestiging</div><div class="t-desc">Ga eerst een kop koffie drinken bij een bestaande Coffee Fellows. Praat met het personeel, observeer de gasten.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.08s"><div class="t-circle">2</div><div class="t-content"><div class="t-tag">Eerste contact</div><div class="t-title">Plan een vrijblijvende kennismaking</div><div class="t-desc">App, bel of mail het Coffee Fellows Nederland-team. Er zijn geen domme vragen &#8212; we zijn er om jou te helpen ontdekken of dit bij jou past.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.08s"><div class="t-circle">2</div><div class="t-content"><div class="t-tag">Week 0</div><div class="t-title">Plan een vrijblijvende kennismaking</div><div class="t-desc">App, bel of mail het Coffee Fellows Nederland-team. Er zijn geen domme vragen &#8212; we zijn er om jou te helpen ontdekken of dit bij jou past.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.12s"><div class="t-circle">3</div><div class="t-content"><div class="t-tag">Week 1&#8211;2</div><div class="t-title">Ori&#235;ntatiegesprek</div><div class="t-desc">In een gesprek kijken we samen hoe jij en Coffee Fellows het beste bij elkaar passen.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.16s"><div class="t-circle">4</div><div class="t-content"><div class="t-tag">De praktijk</div><div class="t-title">Stagedag &#8212; een dag meelopen</div><div class="t-desc">Meelopen in een bestaande vestiging, volledig vrijblijvend. Is de theorie wat je verwachtte? Dit is het moment om dat te ontdekken zonder commitment.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.16s"><div class="t-circle">4</div><div class="t-content"><div class="t-tag">Week 2&#8211;3</div><div class="t-title">Stagedag &#8212; een dag meelopen</div><div class="t-desc">Meelopen in een bestaande vestiging, volledig vrijblijvend. Is de theorie wat je verwachtte? Dit is het moment om dat te ontdekken zonder commitment.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.2s"><div class="t-circle">5</div><div class="t-content"><div class="t-tag">Week 2&#8211;6</div><div class="t-title">Financi&#235;n &amp; ondernemersplan</div><div class="t-desc">Samen kijken we naar de financi&#235;le mogelijkheden. Via ons netwerk van accountants en horecaspecialisten helpen we ook bij de financiering.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.24s"><div class="t-circle">6</div><div class="t-content"><div class="t-tag">Week 4&#8211;12</div><div class="t-title">Locatie, locatie, locatie</div><div class="t-desc">We zoeken samen de ideale A1-locatie in jouw regio &#8212; met voldoende traffic voor een rendabele vestiging.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.28s"><div class="t-circle">7</div><div class="t-content"><div class="t-tag">Formeel</div><div class="t-title">Contracten tekenen</div><div class="t-desc">Je tekent de samenwerkingsovereenkomst na een transparante precontractuele informatiefase.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.32s"><div class="t-circle">8</div><div class="t-content"><div class="t-tag">4 weken</div><div class="t-title">Training &#8212; leer het koffievak</div><div class="t-desc">Onder begeleiding van een trainer draai je mee in een bestaande vestiging. Van barista-techniek tot personeelsplanning &#8212; alles komt voorbij.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.36s"><div class="t-circle">9</div><div class="t-content"><div class="t-tag">1 week voor opening</div><div class="t-title">Inrichten &amp; voorbereiden</div><div class="t-desc">Samen met het Coffee Fellows team richt je de winkel tot in de puntjes in.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.4s"><div class="t-circle" style="background:var(--co);color:#fff;border-color:var(--brm)">&#127881;</div><div class="t-content" style="border-left:3px solid var(--co)"><div class="t-tag" style="color:var(--co)">Het moment!</div><div class="t-title">Opening &#8212; welkom in de Coffee Fellows familie</div><div class="t-desc">De eerste week staat een trainer nog naast je. Daarna ben je echt onderdeel van de Coffee Fellows familie en draai je zelfstandig je eigen vestiging.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.24s"><div class="t-circle">6</div><div class="t-content"><div class="t-tag">Maand 2&#8211;4</div><div class="t-title">Locatie, locatie, locatie</div><div class="t-desc">We zoeken samen de ideale A1-locatie in jouw regio &#8212; met voldoende traffic voor een rendabele vestiging.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.28s"><div class="t-circle">7</div><div class="t-content"><div class="t-tag">Maand 4</div><div class="t-title">Contracten tekenen</div><div class="t-desc">Je tekent de samenwerkingsovereenkomst na een transparante precontractuele informatiefase.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.32s"><div class="t-circle">8</div><div class="t-content"><div class="t-tag">Maand 5 &middot; 4 weken</div><div class="t-title">Training &#8212; leer het koffievak</div><div class="t-desc">Onder begeleiding van een trainer draai je mee in een bestaande vestiging. Van barista-techniek tot personeelsplanning &#8212; alles komt voorbij.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.36s"><div class="t-circle">9</div><div class="t-content"><div class="t-tag">Week v&#243;&#243;r opening</div><div class="t-title">Inrichten &amp; voorbereiden</div><div class="t-desc">Samen met het Coffee Fellows team richt je de winkel tot in de puntjes in.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.4s"><div class="t-circle" style="background:var(--co);color:#fff;border-color:var(--brm)">&#127881;</div><div class="t-content" style="border-left:3px solid var(--co)"><div class="t-tag" style="color:var(--co)">Maand 6&#8211;9 &middot; Het moment!</div><div class="t-title">Opening &#8212; welkom in de Coffee Fellows familie</div><div class="t-desc">De eerste week staat een trainer nog naast je. Daarna ben je echt onderdeel van de Coffee Fellows familie en draai je zelfstandig je eigen vestiging.</div></div></div>
     </div>
   </div>
 </section>
@@ -2312,10 +2384,10 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 <!-- CTA (met sfeer als achtergrond) -->
 <section class="cta-sec" id="contact" style="padding:0;overflow:hidden">
   <div class="sfeer-strip" style="height:280px;position:relative">
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Interieur"><div class="sfeer-img-label">Interieur</div></div>
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aN434J5xUNkB1ZSu_Franchiseportal_Bilder_1848x1040_1_neu.jpg?auto=format,compress" alt="Team"><div class="sfeer-img-label">Team</div></div>
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/09468f1f-79b5-4269-8dfd-9e244ad96b1d_Vollautomaten_PP-1-min.jpeg?auto=compress,format" alt="Koffie"><div class="sfeer-img-label">Koffie</div></div>
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Partners"><div class="sfeer-img-label">Partners</div></div>
+    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Interieur" loading="lazy"><div class="sfeer-img-label">Interieur</div></div>
+    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aN434J5xUNkB1ZSu_Franchiseportal_Bilder_1848x1040_1_neu.jpg?auto=format,compress" alt="Team" loading="lazy"><div class="sfeer-img-label">Team</div></div>
+    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/09468f1f-79b5-4269-8dfd-9e244ad96b1d_Vollautomaten_PP-1-min.jpeg?auto=compress,format" alt="Koffie" loading="lazy"><div class="sfeer-img-label">Koffie</div></div>
+    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Partners" loading="lazy"><div class="sfeer-img-label">Partners</div></div>
   </div>
   <div style="background:linear-gradient(135deg,var(--br),#5C2C10,var(--brm));padding:80px 24px">
     <div class="cta-inner">
@@ -2328,7 +2400,31 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <a href="mailto:c.beckmann@coffeefellows.nl" class="cc"><div class="cc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="cc-lbl">E-mail</div><div class="cc-val">Stuur een bericht</div><div class="cc-sub">Reactie binnen 1 werkdag</div></a>
       </div>
 
-      <p class="cta-disc">Volledig vrijblijvend &middot; Geen verplichtingen &middot; Alles op jouw tempo</p>
+      <!-- CHIEL -->
+      <div class="chiel-blok reveal">
+        <img src="img/inline2.jpg" alt="Chiel Beckmann" width="72" height="72" loading="lazy">
+        <div>
+          <div class="chiel-naam">Chiel Beckmann</div>
+          <div class="chiel-rol">Coffee Fellows Nederland &middot; jouw aanspreekpunt</div>
+          <p class="chiel-quote">"Elk traject begint gewoon met een kop koffie. App me &#8212; je krijgt persoonlijk antwoord, meestal binnen een paar uur."</p>
+        </div>
+      </div>
+
+      <!-- FORMULIER -->
+      <div class="lead-blok reveal">
+        <div class="lead-t">Liever teruggebeld worden?</div>
+        <form action="https://formsubmit.co/c.beckmann@coffeefellows.nl" method="POST" class="lead-form" id="leadForm">
+          <input type="hidden" name="_subject" value="Nieuwe franchiselead via de partnerpagina">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://coffee-fellows-partner.vercel.app/bedankt.html">
+          <input type="text" name="naam" placeholder="Je voornaam" required aria-label="Voornaam">
+          <input type="tel" name="telefoon" placeholder="Je telefoonnummer" required aria-label="Telefoonnummer">
+          <button type="submit">Bel mij terug</button>
+        </form>
+        <p class="lead-privacy">We gebruiken je gegevens alleen om contact met je op te nemen &middot; <a href="privacy.html">privacyverklaring</a></p>
+      </div>
+
+      <p class="cta-disc">Persoonlijk antwoord van Chiel &middot; meestal binnen een paar uur, uiterlijk &#233;&#233;n werkdag &middot; Volledig vrijblijvend &middot; Alles op jouw tempo</p>
     </div>
   </div>
 </section>
@@ -2362,7 +2458,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="interview-modal" style="position:relative">
     <button class="interview-close" onclick="document.getElementById('interviewModal').classList.remove('show')">&#215;</button>
     <div class="interview-img">
-      <img src="Camille.jpg" alt="Camille" onerror="this.src='https://images.prismic.io/coffeefellows-website/aN5CU55xUNkB1Zb5_Franchiseportal_Bilder_1848x1040_6.jpg?auto=format,compress'">
+      <img src="Camille.jpg" alt="Camille" onerror="this.src='https://images.prismic.io/coffeefellows-website/aN5CU55xUNkB1Zb5_Franchiseportal_Bilder_1848x1040_6.jpg?auto=format,compress'" loading="lazy">
       <div class="interview-img-overlay">
         <h3>Camille</h3>
         <span>Coffee Fellows Apeldoorn</span>
