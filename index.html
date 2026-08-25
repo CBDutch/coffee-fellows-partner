@@ -38,7 +38,7 @@ nav.scrolled{background:rgba(58,26,6,.96);backdrop-filter:blur(14px);box-shadow:
 
 /* ── HERO ─────────────────────── */
 .hero{position:relative;z-index:1;isolation:isolate;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.prismic.io/coffeefellows-website/7128f1ad-b160-4654-9564-66184171649e_Corporate-FranchisePacht_HeroImage.jpeg?auto=compress,format');background-size:cover;background-position:center top;transform:scale(1.06);transition:transform 7s ease-out}
+.hero-bg{position:absolute;inset:0;background-image:url('img/hero.jpg');background-size:cover;background-position:center top;transform:scale(1.06);transition:transform 7s ease-out}
 .hero-bg.loaded{transform:scale(1)}
 .hero-ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(28,10,2,.78) 0%,rgba(58,26,6,.52) 55%,rgba(92,44,16,.25) 100%)}
 .hero-c{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:820px}
@@ -88,7 +88,7 @@ section{padding:120px 24px;position:relative}
 
 /* ── MEELOOPDAG BANNER ────────── */
 .meeloop{position:relative;overflow:hidden;padding:60px 24px;text-align:center}
-.meeloop-bg{position:absolute;inset:0;background:url('https://images.prismic.io/coffeefellows-website/aN434J5xUNkB1ZSu_Franchiseportal_Bilder_1848x1040_1_neu.jpg?auto=format,compress') center/cover}
+.meeloop-bg{position:absolute;inset:0;background:url('img/meeloop.jpg') center/cover}
 .meeloop-ov{position:absolute;inset:0;background:rgba(58,26,6,.78)}
 .meeloop-inner{position:relative;z-index:1;max-width:660px;margin:0 auto}
 .meeloop h3{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#fff;margin-bottom:14px}
@@ -178,8 +178,6 @@ section{padding:120px 24px;position:relative}
 .usp-t strong{color:var(--tx);font-weight:600}
 
 /* ── DUURZAAMHEID ─────────────── */
-.sust-sec{background:var(--br);position:relative;overflow:hidden}
-.sust-sec::before{content:'';position:absolute;inset:0;background:url('https://images.prismic.io/coffeefellows-website/aXiOuAIvOtkhB-WV_INDIE265-206_klein.jpg?auto=format,compress') center/cover;opacity:.14}
 .sust-sec .container{position:relative}
 .sust-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .sust-sec .s-h2{color:#fff}
@@ -350,7 +348,7 @@ input[type=range].cf-slider::-moz-range-thumb{width:24px;height:24px;border:none
 
 /* ── CTA ──────────────────────── */
 .cta-sec{background:linear-gradient(135deg,var(--br),#5C2C10,var(--brm));position:relative;overflow:hidden;padding:120px 24px}
-.cta-sec::before{content:'';position:absolute;inset:0;background:url('https://images.prismic.io/coffeefellows-website/aN5CNp5xUNkB1Zbn_DesignohneTitel.jpg?auto=format,compress') center/cover;opacity:.1}
+.cta-sec::before{content:'';position:absolute;inset:0;background:url('img/cta.jpg') center/cover;opacity:.1}
 .cta-inner{position:relative;z-index:1;max-width:840px;margin:0 auto;text-align:center}
 .cta-eyebrow{display:inline-block;background:rgba(200,114,74,.28);border:1px solid var(--co);color:var(--col);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 18px;border-radius:50px;margin-bottom:28px}
 .cta-h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;color:#fff;line-height:1.11;margin-bottom:20px}
@@ -1897,9 +1895,9 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="container">
     <div class="about-grid">
       <div class="about-imgstack rl">
-        <img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Coffee Fellows interieur" loading="lazy">
-        <img src="https://images.prismic.io/coffeefellows-website/aN5CU55xUNkB1Zb5_Franchiseportal_Bilder_1848x1040_6.jpg?auto=format,compress" alt="Coffee Fellows team" loading="lazy">
-        <img src="https://images.prismic.io/coffeefellows-website/aN5KpJ5xUNkB1Zlo_Franchiseportal_Bilder_1848x1040_5.jpg?auto=format,compress" alt="Coffee Fellows barista" loading="lazy">
+        <img src="img/about1.jpg" alt="Barista aan de espressomachine" loading="lazy">
+        <img src="img/about2.jpg" alt="Feel at Home-muur in een Coffee Fellows vestiging" loading="lazy">
+        <img src="img/about3.jpg" alt="Gasten aan de raambar" loading="lazy">
       </div>
       <div class="rr">
         <span class="s-tag">Ons verhaal</span>
@@ -2099,7 +2097,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     </div>
     <div class="models-grid">
       <div class="m-card feat rr">
-        <div class="m-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Franchise model" loading="lazy"></div>
+        <div class="m-img"><img src="img/model.jpg" alt="Coffee Fellows vestiging met lange gemeenschappelijke tafel" loading="lazy"></div>
         <div class="m-body">
           <span class="m-badge">Volledig eigenaarschap</span>
           <h3 class="m-title">Het Franchisemodel</h3>
@@ -2396,9 +2394,9 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 <!-- CTA (met sfeer als achtergrond) -->
 <section class="cta-sec" id="contact" style="padding:0;overflow:hidden">
   <div class="sfeer-strip" style="height:280px;position:relative">
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/7ebbb773-823f-43cf-aadf-c0d43f5a7f20_22_Trier_Standort_Multicard_Kennenlernen.jpg?auto=compress,format" alt="Interieur" loading="lazy"><div class="sfeer-img-label">Interieur</div></div>
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aN434J5xUNkB1ZSu_Franchiseportal_Bilder_1848x1040_1_neu.jpg?auto=format,compress" alt="Team" loading="lazy"><div class="sfeer-img-label">Team</div></div>
-    <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/09468f1f-79b5-4269-8dfd-9e244ad96b1d_Vollautomaten_PP-1-min.jpeg?auto=compress,format" alt="Koffie" loading="lazy"><div class="sfeer-img-label">Koffie</div></div>
+    <div class="sfeer-img"><img src="img/sfeer1.jpg" alt="Interieur" loading="lazy" loading="lazy"><div class="sfeer-img-label">Interieur</div></div>
+    <div class="sfeer-img"><img src="img/sfeer2.jpg" alt="Toonbank" loading="lazy" loading="lazy"><div class="sfeer-img-label">Toonbank</div></div>
+    <div class="sfeer-img"><img src="img/sfeer3.jpg" alt="Koffie" loading="lazy" loading="lazy"><div class="sfeer-img-label">Koffie</div></div>
     <div class="sfeer-img"><img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Partners" loading="lazy"><div class="sfeer-img-label">Partners</div></div>
   </div>
   <div style="background:linear-gradient(135deg,var(--br),#5C2C10,var(--brm));padding:80px 24px">
