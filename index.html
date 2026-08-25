@@ -47,7 +47,7 @@ nav.scrolled{background:rgba(58,26,6,.96);backdrop-filter:blur(14px);box-shadow:
 .hero-h1 em{color:var(--col);font-style:italic}
 .hero-sub{font-size:1.1rem;color:rgba(255,255,255,.78);line-height:1.72;max-width:560px;margin:0 auto 44px;font-weight:300;opacity:0;animation:fu .7s .65s forwards}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fu .7s .88s forwards}
-.btn-primary{background:var(--co);color:#fff;padding:15px 40px;border-radius:10px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .5s cubic-bezier(.16,1,.3,1);box-shadow:0 8px 32px rgba(200,114,74,.35);letter-spacing:.02em}
+.btn-primary{background:var(--co);color:#fff;padding:15px 40px;border-radius:10px;font-weight:700;font-size:.95rem;text-decoration:none;transition:background .25s ease,box-shadow .25s ease,transform .25s ease;box-shadow:0 8px 32px rgba(200,114,74,.35);letter-spacing:.02em}
 .btn-primary:hover{background:#a55835;transform:translateY(-3px);box-shadow:0 16px 44px rgba(200,114,74,.45)}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff;padding:13px 38px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;transition:all .4s cubic-bezier(.16,1,.3,1);letter-spacing:.02em}
 .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-3px)}
@@ -1501,13 +1501,6 @@ div + section {
 
 
 
-/* ── MAGNETISCHE KNOP ── */
-.btn-magnetic {
-  display: inline-block;
-  position: relative;
-  transition: transform .3s cubic-bezier(.16,1,.3,1);
-}
-
 /* ════════════════════════════════
    BUSINESS CASE CALCULATOR
    ════════════════════════════════ */
@@ -2823,19 +2816,6 @@ function updateStickyCta() {
   }
 }
 window.addEventListener('scroll', updateStickyCta, { passive: true });
-
-// ── MAGNETISCHE KNOPPEN ──
-document.querySelectorAll('.btn-primary, .nav-cta').forEach(btn => {
-  btn.addEventListener('mousemove', (e) => {
-    const r = btn.getBoundingClientRect();
-    const x = (e.clientX - r.left - r.width  / 2) * 0.25;
-    const y = (e.clientY - r.top  - r.height / 2) * 0.25;
-    btn.style.transform = `translate(${x}px, ${y}px) translateY(-3px)`;
-  });
-  btn.addEventListener('mouseleave', () => {
-    btn.style.transform = '';
-  });
-});
 
 // Rekentool in-/uitklappen
 function toggleCalc(open){
