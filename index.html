@@ -59,9 +59,9 @@ nav.scrolled{background:rgba(58,26,6,.96);backdrop-filter:blur(14px);box-shadow:
 
 /* ── STATS ────────────────────── */
 .stats-bar{background:var(--br);padding:52px 0}
-.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:0 28px;text-align:center}.stats-inner-2{max-width:1200px;margin:12px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:0 28px;text-align:center;border-top:1px solid rgba(255,255,255,.1);padding-top:28px}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px 20px;padding:0 28px;text-align:center;align-items:start}.stats-inner-2{max-width:1200px;margin:12px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:0 28px;text-align:center;border-top:1px solid rgba(255,255,255,.1);padding-top:28px}
 .stat-num{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:900;color:var(--col);line-height:1;margin-bottom:8px}
-.stat-lbl{color:rgba(255,255,255,.58);font-size:.77rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase}
+.stat-lbl{color:rgba(255,255,255,.58);font-size:.77rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;line-height:1.4;text-wrap:balance}
 
 /* ── SHARED ───────────────────── */
 section{padding:120px 24px;position:relative}
@@ -1825,7 +1825,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <img src="img/inline0.avif" height="116" style="opacity:.9" alt="Coffee Fellows" onerror="this.style.display='none'">
     </div>
     <h1 class="hero-h1">Jij leeft je droom.<br><em>Wij staan achter je.</em></h1>
-    <p class="hero-sub">Misschien denk je al langer aan een eigen zaak. Bij Coffee Fellows run jij je eigen vestiging en bouw je je eigen team &#8212; met een formule achter je die dat sinds 1999 dagelijks doet &#8212; inmiddels de grootste koffieketen van Duitsland, actief in veertien landen. Horeca-ervaring is welkom, ondernemersmentaliteit telt zwaarder.</p>
+    <p class="hero-sub">Misschien denk je al langer aan een eigen zaak. Bij Coffee Fellows run jij je eigen vestiging en bouw je je eigen team. Achter je staat een formule die dat sinds 1999 dagelijks doet: inmiddels de grootste koffieketen van Duitsland, actief in veertien landen. Horeca-ervaring is welkom, ondernemersmentaliteit telt zwaarder.</p>
     <div class="hero-btns">
       <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20wil%20graag%20een%20vrijblijvende%20kennismaking%20plannen!" target="_blank" class="btn-primary">Plan een vrijblijvende kennismaking</a>
       <a href="#modellen" class="btn-ghost">Bekijk de modellen</a>
@@ -1849,19 +1849,19 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <h2 class="s-h2" style="color:#fff">Is dit iets<br><em>voor jou?</em></h2>
     </div>
     <div class="fit-grid">
-      <div class="fit-card reveal"><div class="fit-card-t">De horecaprofessional</div><div class="fit-card-b">Je kent de vloer en wilt nu je eigen zaak &#8212; met een merk en systeem achter je. Zoals Omar: van barista naar eigen vestiging.</div></div>
-      <div class="fit-card reveal" style="transition-delay:.08s"><div class="fit-card-t">De ondernemer zonder horeca-ervaring</div><div class="fit-card-b">Ondernemersbloed, geen horecapapieren? Geen vereiste. Zoals Mohammed &amp; Lara &#8212; inmiddels twee locaties.</div></div>
+      <div class="fit-card reveal"><div class="fit-card-t">De horecaprofessional</div><div class="fit-card-b">Je kent de vloer en wilt nu je eigen zaak, met een merk en systeem achter je. Zoals Omar: van barista naar eigen vestiging.</div></div>
+      <div class="fit-card reveal" style="transition-delay:.08s"><div class="fit-card-t">De ondernemer zonder horeca-ervaring</div><div class="fit-card-b">Ondernemersbloed, geen horecapapieren? Geen vereiste. Zoals Mohammed &amp; Lara, inmiddels twee locaties.</div></div>
       <div class="fit-card reveal" style="transition-delay:.16s"><div class="fit-card-t">De jonge starter met ambitie</div><div class="fit-card-b">Vroeg beginnen met een formule die je draagt. Zoals Camille, gestart op haar 22e.</div></div>
     </div>
     <div class="fit-check reveal">
-      <div class="fit-check-t">Doe de check &#8212; vink aan wat voor jou geldt:</div>
+      <div class="fit-check-t">Doe de check. Vink aan wat voor jou geldt:</div>
       <label><input type="checkbox" class="fitq"> Ik krijg energie van gasten en medewerkers</label>
       <label><input type="checkbox" class="fitq"> Ik wil zelf actief in mijn zaak staan</label>
       <label><input type="checkbox" class="fitq"> Ik kan (of wil leren) leidinggeven</label>
       <label><input type="checkbox" class="fitq"> Ik wil ondernemen binnen een bewezen formule</label>
       <div class="fit-result" id="fitResult"></div>
     </div>
-    <p class="fit-not reveal"><strong>Eerlijk is eerlijk &#8212; Coffee Fellows past waarschijnlijk niet bij je als</strong> je puur wilt investeren zonder zelf betrokken te zijn, geen mensen wilt aansturen, volledige conceptvrijheid zoekt, of horeca-uren niet in je leven passen.</p>
+    <p class="fit-not reveal"><strong>Eerlijk is eerlijk. Coffee Fellows past waarschijnlijk niet bij je als</strong> je puur wilt investeren zonder zelf betrokken te zijn, geen mensen wilt aansturen, volledige conceptvrijheid zoekt, of horeca-uren niet in je leven passen.</p>
   </div>
 </section>
 
@@ -1870,7 +1870,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="stats-inner">
     <div class="reveal"><div class="stat-num" data-static="1999">1999</div><div class="stat-lbl">Opgericht in M&#252;nchen</div></div>
     <div class="reveal" style="transition-delay:.1s"><div class="stat-num" data-target="309">0</div><div class="stat-lbl">Vestigingen wereldwijd</div></div>
-    <div class="reveal" style="transition-delay:.2s"><div class="stat-num" data-target="10">0</div><div class="stat-lbl">Vestigingen in Nederland & groeiend</div></div>
+    <div class="reveal" style="transition-delay:.2s"><div class="stat-num" data-target="10">0</div><div class="stat-lbl">Vestigingen in Nederland</div></div>
     <div class="reveal" style="transition-delay:.3s"><div class="stat-num" data-target="14" data-nosuffix="1">0</div><div class="stat-lbl">Landen op vier continenten</div></div>
   </div>
 </div>
@@ -1886,16 +1886,16 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       </div>
       <div class="rr">
         <span class="s-tag">Ons verhaal</span>
-        <h2 class="s-h2">Feel <em>at Home</em> &#8212;<br>meer dan een slogan</h2>
-        <p class="s-lead">Het begon in 1999 aan de Leopoldstra&#223;e in M&#252;nchen. Kathrin en Stefan Tewes creëerden een coffeeshop waar iedereen zich direct thuis voelt &#8212; achter en voor de toonbank. Vandaag is Coffee Fellows de <strong>grootste koffieketen van Duitsland</strong> en actief in veertien landen op vier continenten &#8212; van Duitsland en Spanje tot Egypte en de Verenigde Staten.</p>
+        <h2 class="s-h2">Feel <em>at Home</em> is geen slogan</h2>
+        <p class="s-lead">Het begon in 1999 aan de Leopoldstra&#223;e in M&#252;nchen. Kathrin en Stefan Tewes creëerden een coffeeshop waar iedereen zich direct thuis voelt, achter en voor de toonbank. Vandaag is Coffee Fellows de <strong>grootste koffieketen van Duitsland</strong> en actief in veertien landen op vier continenten, van Duitsland en Spanje tot Egypte en de Verenigde Staten.</p>
         <blockquote class="a-quote">"We wilden nooit alleen maar koffie verkopen &#8212; we wilden plekken cre&#235;ren waar mensen zich thuis voelen."</blockquote>
         <p style="font-size:.78rem;color:var(--gr);margin-top:-16px;padding-left:26px;font-style:italic">&#8212; Kathrin &amp; Stefan Tewes, oprichters Coffee Fellows</p>
 
         <span class="s-tag" style="margin-top:28px;display:inline-flex">Onze kernwaarden</span>
         <div class="values-grid">
-          <div class="value-card"><div class="value-title">Familie</div><div class="value-items">Je belt rechtstreeks met je begeleider &#8212; geen ticketsysteem</div></div>
+          <div class="value-card"><div class="value-title">Familie</div><div class="value-items">Je belt rechtstreeks met je Area Manager, geen ticketsysteem</div></div>
           <div class="value-card"><div class="value-title">Vertrouwen</div><div class="value-items">Transparante voorwaarden en een traject op jouw tempo</div></div>
-          <div class="value-card"><div class="value-title">Integriteit</div><div class="value-items">Werkt een locatie niet, dan zeggen we dat &#8212; ook als jij enthousiast bent</div></div>
+          <div class="value-card"><div class="value-title">Integriteit</div><div class="value-items">Werkt een locatie niet, dan zeggen we dat, ook als jij enthousiast bent</div></div>
         </div>
         
       </div>
@@ -1913,15 +1913,15 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
           360&#176; Rondleiding
         </div>
         <h2 class="s-h2">Neem een kijkje<br><em>in een van onze winkels</em></h2>
-        <p class="s-lead">Ervaar het "Feel at Home"-gevoel nog voor je de deur uit bent. Verken een van onze vestigingen op 360&#176; &#8212; versleep het beeld om rond te kijken.</p>
+        <p class="s-lead">Ervaar het "Feel at Home"-gevoel nog voor je de deur uit bent. Verken een van onze vestigingen op 360&#176;. Versleep het beeld om rond te kijken.</p>
         <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
           <div class="tour-location-pill">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Coffee Fellows &#8212; Den Haag
+            Coffee Fellows Den Haag
           </div>
           <div class="tour-location-pill">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Coffee Fellows &#8212; D&#252;sseldorf
+            Coffee Fellows D&#252;sseldorf
           </div>
         </div>
       </div>
@@ -1946,7 +1946,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
             </iframe>
           </div>
         </div>
-        <p style="font-size:.85rem;color:rgba(255,255,255,.55);margin-top:14px">Nog beter: kom langs &#8212; de koffie staat klaar. <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20kom%20graag%20eens%20langs%20in%20een%20vestiging!" target="_blank" style="color:var(--col);font-weight:700">Plan een bezoek &#8594;</a></p>
+        <p style="font-size:.85rem;color:rgba(255,255,255,.55);margin-top:14px">Nog beter: kom langs, de koffie staat klaar. <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20kom%20graag%20eens%20langs%20in%20een%20vestiging!" target="_blank" style="color:var(--col);font-weight:700">Plan een bezoek &#8594;</a></p>
       </div>
     </div>
   </div>
@@ -1957,14 +1957,14 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="container">
     <span class="s-tag" style="color:var(--col)">Waarom Coffee Fellows</span>
     <h2 class="s-h2">Jij runt de zaak.<br><em>Je hoeft niet alles zelf uit te vinden.</em></h2>
-    <p class="s-lead">Personeel, gasten en de dagelijkse leiding blijven van jou &#8212; je wordt echt ondernemer. Wat wij meebrengen is de ervaring: locatie, formule, inkoop, training en begeleiding, zodat je niet iedere les zelf hoeft te betalen.</p>
+    <p class="s-lead">Personeel, gasten en de dagelijkse leiding blijven van jou: je wordt echt ondernemer. Wat wij meebrengen is de ervaring: locatie, formule, inkoop, training en begeleiding, zodat je niet iedere les zelf hoeft te betalen.</p>
     <div class="ben-grid-9">
-<div class="bc9 reveal" style="transition-delay:0.00s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="bc9-title">Persoonlijke begeleiding</div><div class="bc9-body">Een ervaren Area Manager staat naast je &#8212; v&#243;&#243;r de opening &#233;n daarna, met een vast aanspreekpunt en periodieke vestigingsbezoeken.</div><ul class="bc9-list"><li>Dedicated Area Manager per locatie</li><li>Vast aanspreekpunt na opening</li><li>Gezamenlijke omzetsturing</li><li>Snelle, directe communicatie</li></ul></div>
-<div class="bc9 reveal" style="transition-delay:0.05s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="bc9-title">Locatie &amp; inrichting</div><div class="bc9-body">A1-locaties: binnensteden, vliegvelden, stations. 100&#8211;200 m&#178;, veel glas en lichtinval &#8212; &#34;Feel at Home&#34; in elk detail.</div><ul class="bc9-list"><li>Actieve locatiescout</li><li>Ondersteuning bij huuronderhandeling</li><li>Gecertificeerde winkelinrichters</li><li>Herkenbaar designconcept</li></ul></div>
-<div class="bc9 reveal" style="transition-delay:0.10s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="bc9-title">Training &amp; personeel</div><div class="bc9-body">4 weken fulltime meedraaien in een bestaande vestiging, ondersteund door het &#34;Brainee&#34;-leersysteem &#8212; van barista-techniek tot personeelsplanning, v&#243;&#243;r je opent.</div><ul class="bc9-list"><li>4 weken opleiding in de praktijk</li><li>Digitaal leersysteem voor je team</li><li>Hulp bij werving &amp; contracten</li><li>Gemiddeld team: 10&#8211;15 medewerkers</li></ul></div>
+<div class="bc9 reveal" style="transition-delay:0.00s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="bc9-title">Persoonlijke begeleiding</div><div class="bc9-body">Een ervaren Area Manager staat naast je, v&#243;&#243;r de opening &#233;n daarna, met een vast aanspreekpunt en periodieke vestigingsbezoeken.</div><ul class="bc9-list"><li>Dedicated Area Manager per locatie</li><li>Vast aanspreekpunt na opening</li><li>Gezamenlijke omzetsturing</li><li>Snelle, directe communicatie</li></ul></div>
+<div class="bc9 reveal" style="transition-delay:0.05s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="bc9-title">Locatie &amp; inrichting</div><div class="bc9-body">A1-locaties: binnensteden, vliegvelden, stations. 100&#8211;200 m&#178;, veel glas en lichtinval. &#34;Feel at Home&#34; in elk detail.</div><ul class="bc9-list"><li>Actieve locatiescout</li><li>Ondersteuning bij huuronderhandeling</li><li>Gecertificeerde winkelinrichters</li><li>Herkenbaar designconcept</li></ul></div>
+<div class="bc9 reveal" style="transition-delay:0.10s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="bc9-title">Training &amp; personeel</div><div class="bc9-body">4 weken fulltime meedraaien in een bestaande vestiging, ondersteund door het &#34;Brainee&#34;-leersysteem: van barista-techniek tot personeelsplanning, v&#243;&#243;r je opent.</div><ul class="bc9-list"><li>4 weken opleiding in de praktijk</li><li>Digitaal leersysteem voor je team</li><li>Hulp bij werving &amp; contracten</li><li>Gemiddeld team: 10&#8211;15 medewerkers</li></ul></div>
 <div class="bc9 reveal" style="transition-delay:0.15s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><div class="bc9-title">Inkoop, techniek &amp; kwaliteit</div><div class="bc9-body">Centrale inkoopkracht met vaste prijzen, professionele apparatuur op Coffee Fellows-standaard en alle HACCP-documentatie kant-en-klaar.</div><ul class="bc9-list"><li>Gecentraliseerde inkoop, vaste leveranciers</li><li>Espressomachines incl. service &amp; onderhoud</li><li>Geteste recepturen &amp; checklists</li><li>Eenvoudig online bestelportaal</li></ul></div>
 <div class="bc9 reveal" style="transition-delay:0.20s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="bc9-title">Marketing &amp; zichtbaarheid</div><div class="bc9-body">Landelijke campagnes uit de 2% marketingbijdrage, gecombineerd met lokale zichtbaarheid voor jouw vestiging.</div><ul class="bc9-list"><li>Centrale merkstrategie</li><li>Google &amp; social media</li><li>Wervingsmiddelenwinkel</li><li>Community management</li></ul></div>
-<div class="bc9 reveal" style="transition-delay:0.25s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 22M9.5 10.5C11 6.7 17.5 2 22 2c0 4.5-4.3 11-8.5 12.5"/></svg></div><div class="bc9-title">Producten &amp; duurzaamheid</div><div class="bc9-body">Bagels als USP, exclusieve eigenmerken en 100% Coffee Fellows Certified koffie &#8212; plasticvrij en met Too Good To Go tegen verspilling.</div><ul class="bc9-list"><li>Exclusieve eigenmerken (Frappiato&#174;)</li><li>Seizoensspecials, continu vernieuwd</li><li>Vegetarisch &amp; vegan aanbod</li><li>Care Cup herbruikbare beker</li></ul></div>
+<div class="bc9 reveal" style="transition-delay:0.25s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 22M9.5 10.5C11 6.7 17.5 2 22 2c0 4.5-4.3 11-8.5 12.5"/></svg></div><div class="bc9-title">Producten &amp; duurzaamheid</div><div class="bc9-body">Bagels als USP, exclusieve eigenmerken en 100% Coffee Fellows Certified koffie, plasticvrij en met Too Good To Go tegen verspilling.</div><ul class="bc9-list"><li>Exclusieve eigenmerken (Frappiato&#174;)</li><li>Seizoensspecials, continu vernieuwd</li><li>Vegetarisch &amp; vegan aanbod</li><li>Care Cup herbruikbare beker</li></ul></div>
 </div>
   </div>
 </section>
@@ -1974,7 +1974,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="container">
     <div style="text-align:center;max-width:580px;margin:0 auto">
       <span class="s-tag">Partner aan het woord</span>
-      <h2 class="s-h2">Van droom naar<br><em>eigen vestiging</em></h2>
+      <h2 class="s-h2">Zij begonnen ook <em>ergens</em></h2>
     </div>
     <div class="camille-card reveal" style="margin-top:52px">
       <div class="camille-img">
@@ -1993,7 +1993,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
           <div class="cj-step"><span class="cj-num">1 jaar</span><span class="cj-lbl">naar franchisepartner</span></div>
         </div>
         <blockquote class="camille-quote">"Wat Coffee Fellows uniek maakt, is het huiskamergevoel dat we cre&#235;ren. Onze gasten voelen zich hier &#233;cht thuis. De ondersteuning vanuit het hoofdkantoor is altijd beschikbaar, en er wordt echt geluisterd naar je idee&#235;n."</blockquote>
-        <p class="camille-text">Na haar studie werkte Camille een jaar als zzp'er door heel Nederland. Terug in Apeldoorn ontdekte ze de Coffee Fellows-vestiging die beschikbaar was ter overname. Ze ging in gesprek &#8212; en het klikte direct. Binnen twee weken had ze het concept volledig onder de knie. Na &#233;&#233;n jaar volledig doorgestroomd naar franchisepartner. Sinds 2024 runt ze &#8212; inmiddels 24 &#8212; haar eigen vestiging.</p>
+        <p class="camille-text">Na haar studie werkte Camille een jaar als zzp'er door heel Nederland. Terug in Apeldoorn ontdekte ze de Coffee Fellows-vestiging die beschikbaar was ter overname. Ze ging in gesprek en het klikte direct. Binnen twee weken had ze het concept volledig onder de knie. Na &#233;&#233;n jaar volledig doorgestroomd naar franchisepartner. Sinds 2024 runt ze &#8212; inmiddels 24 &#8212; haar eigen vestiging.</p>
         <div class="camille-tip"><span class="ct-label">Haar tip voor jou:</span>"Als je passie hebt voor koffie en gastvrijheid, zit je hier helemaal goed. Het is een concept met veel groeipotentie."</div>
       <button class="camille-card-btn" onclick="document.getElementById('interviewModal').classList.add('show')">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
@@ -2005,15 +2005,15 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <div style="background:var(--wh);border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(58,26,6,.07)">
         <img src="https://images.prismic.io/coffeefellows-website/aQ3dOrpReVYa4OwJ_DS8_0161-Bearbeitet_klein.jpg?auto=format,compress" alt="Mohammed &amp; Lara" style="width:100%;height:160px;object-fit:cover;object-position:center 20%;display:block" loading="lazy">
         <div style="padding:20px 22px">
-          <div class="story-name">Mohammed &amp; Lara &#8212; Coffee Fellows partners</div>
-          <p class="story-quote" style="font-size:.9rem">Zonder uitgebreide horeca-achtergrond bij Coffee Fellows terechtgekomen &#8212; maar van dag &#233;&#233;n volledig all-in gegaan. Vorig jaar namen we onze tweede locatie over.</p>
+          <div class="story-name">Mohammed &amp; Lara, Coffee Fellows partners</div>
+          <p class="story-quote" style="font-size:.9rem">Zonder uitgebreide horeca-achtergrond bij Coffee Fellows terechtgekomen, maar van dag &#233;&#233;n volledig all-in gegaan. Vorig jaar namen we onze tweede locatie over.</p>
         </div>
       </div>
       <div style="background:var(--wh);border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(58,26,6,.07)">
         <img src="https://images.prismic.io/coffeefellows-website/aN45Xp5xUNkB1ZTn_OmarPartnerfoto.jpg?auto=format,compress&rect=0,0,1321,1641&w=1321&h=1641" alt="Omar" style="width:100%;height:160px;object-fit:cover;object-position:center 35%;display:block" loading="lazy">
         <div style="padding:20px 22px">
-          <div class="story-name">Omar &#8212; Coffee Fellows partner</div>
-          <p class="story-quote" style="font-size:.9rem">Van barista tot ploegchef &#8212; en parallel aan mijn studie bleef ik mijn droom nastreven. Sinds 2024 leid ik vol trots mijn eigen vestiging, precies op de plek waar de oprichters begonnen.</p>
+          <div class="story-name">Omar, Coffee Fellows partner</div>
+          <p class="story-quote" style="font-size:.9rem">Van barista tot ploegchef, en parallel aan mijn studie bleef ik mijn droom nastreven. Sinds 2024 leid ik vol trots mijn eigen vestiging, precies op de plek waar de oprichters begonnen.</p>
         </div>
       </div>
     </div>
@@ -2023,17 +2023,17 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <div class="day-strip-head">
         <div class="day-strip-txt">
         <span class="s-tag">Zie jezelf dit doen?</span>
-        <h3 class="day-strip-h">Een dag als Coffee Fellow &#8212; <em style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:var(--co)">zoals Camille hem draait</em></h3>
+        <h3 class="day-strip-h">Een dag als Coffee Fellow, <em style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:var(--co)">zoals Camille hem draait</em></h3>
         </div>
         <img src="img/gesprek.jpg" alt="Partner aan tafel in de zaak" class="day-strip-img" loading="lazy">
       </div>
       <div class="day-row">
         <div class="day-item"><div class="day-time">07:30</div><div class="day-what">Start: machines aan en terras opzetten</div></div>
         <div class="day-item"><div class="day-time">07:45</div><div class="day-what">Verse broodjes &amp; voorbereiding met het team</div></div>
-        <div class="day-item"><div class="day-time">08:00</div><div class="day-what">Deuren open &#8212; vaste gasten staan al klaar</div></div>
+        <div class="day-item"><div class="day-time">08:00</div><div class="day-what">Deuren open, vaste gasten staan al klaar</div></div>
         <div class="day-item"><div class="day-time">12:00</div><div class="day-what">Bagel-piek: lunchdrukte in volle gang</div></div>
         <div class="day-item"><div class="day-time">15:00</div><div class="day-what">Bestellingen, planning &amp; sparren met je Area Manager</div></div>
-        <div class="day-item"><div class="day-time">20:00</div><div class="day-what">Deuren dicht &#8212; laatste gasten uitgezwaaid</div></div>
+        <div class="day-item"><div class="day-time">20:00</div><div class="day-what">Deuren dicht, laatste gasten uitgezwaaid</div></div>
         <div class="day-item"><div class="day-time">20:30</div><div class="day-what">Afgesloten: cijfers rond, elke dag een stukje beter</div></div>
       </div>
     </div>
@@ -2042,7 +2042,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <div class="meeloop-blok reveal">
       <div>
         <div class="meeloop-t">Nog niet klaar voor een gesprek? <em style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400">Loop eerst een dag mee.</em></div>
-        <p class="meeloop-b">Draai een dag mee in een bestaande vestiging. Gratis, vrijblijvend, gewoon kijken of het bij je past &#8212; zonder enige verplichting.</p>
+        <p class="meeloop-b">Draai een dag mee in een bestaande vestiging. Gratis, vrijblijvend, gewoon kijken of het bij je past. Zonder enige verplichting.</p>
       </div>
       <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20wil%20graag%20een%20dag%20meelopen%20in%20een%20vestiging!" target="_blank" class="btn-primary" style="white-space:nowrap">Loop een dag mee &#8594;</a>
     </div>
@@ -2056,11 +2056,11 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <h2 class="s-h2">Koffie, bagels &amp; <em>kleurrijke specials</em></h2>
     <div class="prod-compact" style="margin-top:48px">
       <div>
-        <p class="s-lead">Koffiespecialiteiten van de beste bonen, handgemaakte bagels, verse bowls &#8212; een assortiment dat gasten op meerdere momenten van de dag aanspreekt.</p>
+        <p class="s-lead">Koffiespecialiteiten van de beste bonen, handgemaakte bagels, verse bowls: een assortiment dat gasten op meerdere momenten van de dag aanspreekt.</p>
         <div class="usp-list" style="margin-top:24px">
-          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Bagels als USP</strong> &#8212; lunchomzet b&#243;venop de koffie: een hogere besteding per gast dan een klassieke coffeeshop. In 2024 gingen er wereldwijd 3,23 miljoen bagels en snacks over de toonbank</div></div>
-          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Exclusieve eigenmerken</strong> &#8212; Frappiato&#174; en andere producten die alleen bij Coffee Fellows bestaan. Goed voor 14,9 miljoen verkochte koffies in 2024</div></div>
-          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Continu vernieuwd</strong> &#8212; elk seizoen nieuwe specials, zodat gasten op meerdere dagdelen blijven terugkomen</div></div>
+          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Bagels als USP</strong>: lunchomzet b&#243;venop de koffie: een hogere besteding per gast dan een klassieke coffeeshop. In 2024 gingen er wereldwijd 3,23 miljoen bagels en snacks over de toonbank</div></div>
+          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Exclusieve eigenmerken</strong>: Frappiato&#174; en andere producten die alleen bij Coffee Fellows bestaan. Goed voor 14,9 miljoen verkochte koffies in 2024</div></div>
+          <div class="usp-row"><div class="usp-dot"></div><div class="usp-t"><strong>Continu vernieuwd</strong>: elk seizoen nieuwe specials, zodat gasten op meerdere dagdelen blijven terugkomen</div></div>
         </div>
       </div>
       <div>
@@ -2081,7 +2081,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <div class="models-intro reveal">
       <span class="s-tag">Het financi&#235;le plaatje</span>
       <h2 class="s-h2">Investering &amp; <em>rendement</em></h2>
-      <p class="s-lead" style="margin:0 auto">Als franchisepartner financier je de inrichting zelf en word je volwaardig eigenaar van je vestiging. Dit zijn de kerncijfers &#8212; wil je rekenen, dan bouw je hieronder je eigen business case.</p>
+      <p class="s-lead" style="margin:0 auto">Als franchisepartner financier je de inrichting zelf en word je volwaardig eigenaar van je vestiging. Dit zijn de kerncijfers. Wil je rekenen, dan bouw je hieronder je eigen business case.</p>
     </div>
     <div class="models-grid">
       <div class="m-card feat rr">
@@ -2101,25 +2101,25 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
             <div class="cr"><span class="cr-l">Verzorgingsgebied</span><span class="cr-v">v.a. 75.000 inwoners</span></div>
             <div class="cr"><span class="cr-l">Oppervlakte</span><span class="cr-v">circa 150 m&#178;</span></div>
           </div>
-          <p class="m-honest">We rekenen liever &#233;&#233;n locatie te veel door dan &#233;&#233;n te snel goed. Gaat een locatie niet werken, dan zeggen we dat &#8212; ook als jij enthousiast bent.</p>
+          <p class="m-honest">We rekenen liever &#233;&#233;n locatie te veel door dan &#233;&#233;n te snel goed. Gaat een locatie niet werken, dan zeggen we dat, ook als jij enthousiast bent.</p>
             <ul class="m-feats"><li>Volledig eigenaarschap van je vestiging</li><li>Gebruik van alle Coffee Fellows-merken</li><li>Compleet ondersteuningspakket</li><li>Groei naar meerdere locaties</li></ul>
         </div>
       </div>
     </div>
     <p style="text-align:center;font-size:.78rem;color:var(--gr);margin-top:20px;font-style:italic">Alle genoemde bedragen zijn indicatief en afhankelijk van locatie, omvang, financiering en gekozen samenwerkingsmodel.</p>
     <div class="verg-blok reveal">
-      <div class="verg-t">Zelf een koffiezaak beginnen &#8212; of met Coffee Fellows?</div>
+      <div class="verg-t">Zelf een koffiezaak beginnen, of met Coffee Fellows?</div>
       <div class="verg-grid">
         <div class="verg-col">
           <div class="verg-h">Zelfstandig starten</div>
-          <ul><li>Merk, concept en menukaart zelf uitvinden</li><li>Zelf leveranciers zoeken en onderhandelen</li><li>Leren door duur vallen en opstaan</li><li>Volledige vrijheid &#8212; en volledig alleen</li></ul>
+          <ul><li>Merk, concept en menukaart zelf uitvinden</li><li>Zelf leveranciers zoeken en onderhandelen</li><li>Leren door duur vallen en opstaan</li><li>Volledige vrijheid, en volledig alleen</li></ul>
         </div>
         <div class="verg-col cf">
           <div class="verg-h">Met Coffee Fellows</div>
-          <ul><li>Bewezen formule en merk sinds 1999</li><li>Centrale inkoopkracht met vaste prijzen</li><li>4 weken training v&#243;&#243;r je opent</li><li>Formule-kaders &#233;n lokale ruimte &#8212; nooit alleen</li></ul>
+          <ul><li>Bewezen formule en merk sinds 1999</li><li>Centrale inkoopkracht met vaste prijzen</li><li>4 weken training v&#243;&#243;r je opent</li><li>Formule-kaders &#233;n lokale ruimte, nooit alleen</li></ul>
         </div>
       </div>
-      <p class="verg-eerlijk">Eerlijk: je betaalt er een fee voor (5% + 2%) en werkt binnen de formule. Dat is de ruil &#8212; en die moet bij je passen.</p>
+      <p class="verg-eerlijk">Eerlijk: je betaalt er een fee voor (5% + 2%) en werkt binnen de formule. Dat is de ruil, en die moet bij je passen.</p>
     </div>
     <p style="text-align:center;margin-top:18px"><a href="#businesscase" style="color:var(--co);font-weight:700;font-size:.92rem;text-decoration:none">Wil je rekenen? Bouw je eigen business case &#8595;</a></p>
   </div>
@@ -2190,7 +2190,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div class="inv-card">
           <div class="inv-card-label">Eigen inbreng (20%)</div>
           <span class="inv-card-val" id="invEigen">€ 60.000</span>
-          <div class="inv-card-sub">rekenvoorbeeld &#8212; in de praktijk €20k–€75k</div>
+          <div class="inv-card-sub">rekenvoorbeeld, in de praktijk €20k–€75k</div>
         </div>
         <div class="inv-card">
           <div class="inv-card-label">Financiering (80%)</div>
@@ -2208,7 +2208,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div style="width:28px;height:28px;border-radius:50%;background:var(--co);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.8rem;color:#fff;flex-shrink:0">2</div>
         <div style="font-weight:700;font-size:1.05rem;color:#fff">Exploitatiebegroting &amp; P&amp;L</div>
       </div>
-      <p style="color:rgba(255,255,255,.5);font-size:.82rem;margin-left:40px;margin-bottom:28px">Stel jouw omzet, huur en eigen inzet in. De drie scenario's variëren in inkooppercentage en overige kosten. <strong style="color:rgba(255,255,255,.7)">We tonen bewust ook het lage scenario</strong> &#8212; ondernemen kent risico's, en die horen in het gesprek.</p>
+      <p style="color:rgba(255,255,255,.5);font-size:.82rem;margin-left:40px;margin-bottom:28px">Stel jouw omzet, huur en eigen inzet in. De drie scenario's variëren in inkooppercentage en overige kosten. <strong style="color:rgba(255,255,255,.7)">We tonen bewust ook het lage scenario</strong> . Ondernemen kent risico's, en die horen in het gesprek.</p>
 
       <div class="bcc-layout">
 
@@ -2303,7 +2303,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div class="kans-blok reveal">
           <div class="kans-badge">&#128273; Direct starten?</div>
           <div class="kans-t">In Enschede staat een draaiende vestiging klaar voor overname</div>
-          <p class="kans-b">Instappen in een lopende zaak met bestaand team en vaste gasten &#8212; zo begon Camille ook.</p>
+          <p class="kans-b">Instappen in een lopende zaak met bestaand team en vaste gasten. Zo begon Camille ook.</p>
           <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20interesse%20in%20de%20overname%20van%20de%20vestiging%20in%20Enschede!" target="_blank" class="kans-cta">Vraag naar de overname &#8594;</a>
         </div>
         <div>
@@ -2315,7 +2315,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
             <div class="kk-card" data-city="Breda" onmouseenter="highlightCity('Breda')" onmouseleave="unhighlightCity('Breda')" onclick="highlightCity('Breda')"><div class="kk-city">Coffee Fellows Breda</div><div class="kk-meta">Gezocht: franchisepartner &middot; binnenstad</div><div class="kk-status ori">Ori&#235;ntatie</div></div>
           </div>
           <p style="font-size:.78rem;color:var(--gr);margin-top:14px;line-height:1.7">Ook in gesprek over: Haarlem &middot; Delft &middot; Maastricht &middot; Tilburg &middot; Nijmegen &middot; Arnhem &middot; Zwolle &middot; Leeuwarden &middot; Leiden &middot; Amsterdam &middot; Den Bosch</p>
-          <p style="font-size:.78rem;color:var(--gr);margin-top:16px;line-height:1.6">Heb jij een locatie in gedachten of woon je in een van deze steden? Neem contact op &#8212; we verkennen samen de kansen.</p>
+          <p style="font-size:.78rem;color:var(--gr);margin-top:16px;line-height:1.6">Heb jij een locatie in gedachten of woon je in een van deze steden? Neem contact op, dan verkennen we samen de kansen.</p>
           <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20interesse%20in%20een%20Coffee%20Fellows%20locatie%20in%20mijn%20regio!" target="_blank" style="display:inline-block;margin-top:16px;background:var(--co);color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.85rem;text-decoration:none;transition:all .3s">Bekijk kansen in jouw regio &#8594;</a>
         </div>
       </div>
@@ -2329,7 +2329,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
     <div class="steps-intro reveal">
       <span class="s-tag">Hoe het werkt</span>
       <h2 class="s-h2">Partner worden<br>in <em>10 stappen</em></h2>
-      <p style="font-size:.88rem;color:var(--gr);line-height:1.65;margin-top:8px">Van eerste kennismaking tot opening &#8212; reken op 3&#8211;6 maanden voor het selectietraject en daarna nog zo'n 3 maanden tot de openingsdag.</p>
+      <p style="font-size:.88rem;color:var(--gr);line-height:1.65;margin-top:8px">Van eerste kennismaking tot opening. Reken op 3&#8211;6 maanden voor het selectietraject en daarna nog zo'n 3 maanden tot de openingsdag.</p>
     </div>
     <div class="maandbalk reveal">
       <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Kennismaken</div><div class="mb-tijd">Maand 0&#8211;1</div></div>
@@ -2340,16 +2340,16 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <div class="mb-seg hot"><div class="mb-bar"></div><div class="mb-lbl">Opening</div><div class="mb-tijd">Maand 6&#8211;9</div></div>
     </div>
     <div class="timeline">
-      <div class="t-row reveal" style="transition-delay:.04s"><div class="t-circle">1</div><div class="t-content"><div class="t-tag">Begin hier</div><div class="t-title">Ori&#235;ntatie &#8212; bezoek een vestiging</div><div class="t-desc">Ga eerst een kop koffie drinken bij een bestaande Coffee Fellows. Praat met het personeel, observeer de gasten.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.08s"><div class="t-circle">2</div><div class="t-content"><div class="t-tag">Week 0</div><div class="t-title">Plan een vrijblijvende kennismaking</div><div class="t-desc">App, bel of mail het Coffee Fellows Nederland-team. Er zijn geen domme vragen &#8212; we zijn er om jou te helpen ontdekken of dit bij jou past.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.04s"><div class="t-circle">1</div><div class="t-content"><div class="t-tag">Begin hier</div><div class="t-title">Ori&#235;ntatie: bezoek een vestiging</div><div class="t-desc">Ga eerst een kop koffie drinken bij een bestaande Coffee Fellows. Praat met het personeel, observeer de gasten.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.08s"><div class="t-circle">2</div><div class="t-content"><div class="t-tag">Week 0</div><div class="t-title">Plan een vrijblijvende kennismaking</div><div class="t-desc">App, bel of mail het Coffee Fellows Nederland-team. Er zijn geen domme vragen. We zijn er om jou te helpen ontdekken of dit bij jou past.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.12s"><div class="t-circle">3</div><div class="t-content"><div class="t-tag">Week 1&#8211;2</div><div class="t-title">Ori&#235;ntatiegesprek</div><div class="t-desc">In een gesprek kijken we samen hoe jij en Coffee Fellows het beste bij elkaar passen.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.16s"><div class="t-circle">4</div><div class="t-content"><div class="t-tag">Week 2&#8211;3</div><div class="t-title">Stagedag &#8212; een dag meelopen</div><div class="t-desc">Meelopen in een bestaande vestiging, volledig vrijblijvend. Is de theorie wat je verwachtte? Dit is het moment om dat te ontdekken zonder commitment.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.16s"><div class="t-circle">4</div><div class="t-content"><div class="t-tag">Week 2&#8211;3</div><div class="t-title">Stagedag: een dag meelopen</div><div class="t-desc">Meelopen in een bestaande vestiging, volledig vrijblijvend. Is de theorie wat je verwachtte? Dit is het moment om dat te ontdekken zonder commitment.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.2s"><div class="t-circle">5</div><div class="t-content"><div class="t-tag">Week 2&#8211;6</div><div class="t-title">Financi&#235;n &amp; ondernemersplan</div><div class="t-desc">Samen kijken we naar de financi&#235;le mogelijkheden. Via ons netwerk van accountants en horecaspecialisten helpen we ook bij de financiering.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.24s"><div class="t-circle">6</div><div class="t-content"><div class="t-tag">Maand 2&#8211;4</div><div class="t-title">Locatie, locatie, locatie</div><div class="t-desc">We zoeken samen de ideale A1-locatie in jouw regio &#8212; met voldoende traffic voor een rendabele vestiging.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.24s"><div class="t-circle">6</div><div class="t-content"><div class="t-tag">Maand 2&#8211;4</div><div class="t-title">Locatie, locatie, locatie</div><div class="t-desc">We zoeken samen de ideale A1-locatie in jouw regio, met voldoende traffic voor een rendabele vestiging.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.28s"><div class="t-circle">7</div><div class="t-content"><div class="t-tag">Maand 4</div><div class="t-title">Contracten tekenen</div><div class="t-desc">Je tekent de samenwerkingsovereenkomst na een transparante precontractuele informatiefase.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.32s"><div class="t-circle">8</div><div class="t-content"><div class="t-tag">Maand 5 &middot; 4 weken</div><div class="t-title">Training &#8212; leer het koffievak</div><div class="t-desc">Onder begeleiding van een trainer draai je mee in een bestaande vestiging. Van barista-techniek tot personeelsplanning &#8212; alles komt voorbij.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.32s"><div class="t-circle">8</div><div class="t-content"><div class="t-tag">Maand 5 &middot; 4 weken</div><div class="t-title">Training: leer het koffievak</div><div class="t-desc">Onder begeleiding van een trainer draai je mee in een bestaande vestiging. Van barista-techniek tot personeelsplanning: alles komt voorbij.</div></div></div>
       <div class="t-row reveal" style="transition-delay:.36s"><div class="t-circle">9</div><div class="t-content"><div class="t-tag">Week v&#243;&#243;r opening</div><div class="t-title">Inrichten &amp; voorbereiden</div><div class="t-desc">Samen met het Coffee Fellows team richt je de winkel tot in de puntjes in.</div></div></div>
-      <div class="t-row reveal" style="transition-delay:.4s"><div class="t-circle" style="background:var(--co);color:#fff;border-color:var(--brm)">&#127881;</div><div class="t-content" style="border-left:3px solid var(--co)"><div class="t-tag" style="color:var(--co)">Maand 6&#8211;9 &middot; Het moment!</div><div class="t-title">Opening &#8212; welkom in de Coffee Fellows familie</div><div class="t-desc">De eerste week staat een trainer nog naast je. Daarna ben je echt onderdeel van de Coffee Fellows familie en draai je zelfstandig je eigen vestiging.</div></div></div>
+      <div class="t-row reveal" style="transition-delay:.4s"><div class="t-circle" style="background:var(--co);color:#fff;border-color:var(--brm)">&#127881;</div><div class="t-content" style="border-left:3px solid var(--co)"><div class="t-tag" style="color:var(--co)">Maand 6&#8211;9 &middot; Het moment!</div><div class="t-title">Opening: welkom in de Coffee Fellows familie</div><div class="t-desc">De eerste week staat een trainer nog naast je. Daarna ben je echt onderdeel van de Coffee Fellows familie en draai je zelfstandig je eigen vestiging.</div></div></div>
     </div>
   </div>
 </section>
@@ -2359,22 +2359,22 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
   <div class="container">
     <div class="faq-intro reveal">
       <span class="s-tag">Veelgestelde vragen</span>
-      <h2 class="s-h2">Grote kans dat jouw<br><em>vraag ertussen staat</em></h2>
+      <h2 class="s-h2">Vragen die vaker <em>langskomen</em></h2>
       <p style="font-size:.88rem;color:var(--gr);margin-top:10px">Staat je vraag er niet tussen? Plan dan direct een kennismaking.</p>
     </div>
     <div class="faq-wrap">
-      <div class="faq-item reveal" style="transition-delay:.04s"><button class="faq-q" onclick="tFaq(this)">Ik heb geen horecaervaring. Is dat erg?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Nee &#8212; horecaervaring is geen vereiste.</strong> Passie, doorzettingsvermogen en inzet zijn de werkelijke succesfactoren. Je draait v&#243;&#243;r de opening 4 weken fulltime mee in een bestaande vestiging.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.08s"><button class="faq-q" onclick="tFaq(this)">Ik heb niet genoeg eigen vermogen. Houdt het dan op?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Niet direct &#8212; er is vaak meer mogelijk dan je denkt.</strong> Partners starten doorgaans met &#8364;20.000 tot &#8364;75.000 eigen vermogen, afhankelijk van de locatie, de staat van het pand en je financieringsplan. Via ons netwerk van accountants en financieringsspecialisten kijken we samen wat in jouw situatie haalbaar is.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.04s"><button class="faq-q" onclick="tFaq(this)">Ik heb geen horecaervaring. Is dat erg?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Nee, horecaervaring is geen vereiste.</strong> Passie, doorzettingsvermogen en inzet zijn de werkelijke succesfactoren. Je draait v&#243;&#243;r de opening 4 weken fulltime mee in een bestaande vestiging.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.08s"><button class="faq-q" onclick="tFaq(this)">Ik heb niet genoeg eigen vermogen. Houdt het dan op?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Niet direct. Er is vaak meer mogelijk dan je denkt.</strong> Partners starten doorgaans met &#8364;20.000 tot &#8364;75.000 eigen vermogen, afhankelijk van de locatie, de staat van het pand en je financieringsplan. Via ons netwerk van accountants en financieringsspecialisten kijken we samen wat in jouw situatie haalbaar is.</p></div></div>
 
-      <div class="faq-item reveal" style="transition-delay:.16s"><button class="faq-q" onclick="tFaq(this)">Ik twijfel nog. Kan ik toch contact opnemen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Absoluut &#8212; alles is volledig vrijblijvend, van beide kanten.</strong> Je kunt op elk moment in het traject besluiten dat het toch niets voor je is.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.2s"><button class="faq-q" onclick="tFaq(this)">Kan ik meerdere vestigingen runnen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Ja &#8212; groeiambitie wordt aangemoedigd.</strong> Er zijn al meerdere partners die twee of meer vestigingen aansturen.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.16s"><button class="faq-q" onclick="tFaq(this)">Ik twijfel nog. Kan ik toch contact opnemen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Absoluut. Alles is volledig vrijblijvend, van beide kanten.</strong> Je kunt op elk moment in het traject besluiten dat het toch niets voor je is.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.2s"><button class="faq-q" onclick="tFaq(this)">Kan ik meerdere vestigingen runnen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Ja, groeiambitie wordt aangemoedigd.</strong> Er zijn al meerdere partners die twee of meer vestigingen aansturen.</p></div></div>
       <div class="faq-item reveal" style="transition-delay:.24s"><button class="faq-q" onclick="tFaq(this)">Hoe lang duurt het voordat ik open ga?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Totaal 6&#8211;9 maanden van eerste contact tot openingsdag.</strong> Reken op 3&#8211;6 maanden voor het selectietraject, plus nog zo'n 3 maanden voor verbouwing, training en vergunningen.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.26s"><button class="faq-q" onclick="tFaq(this)">Wat kan ik verdienen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Dat hangt af van locatie, omzet en jouw eigen rol.</strong> Speel met onze <a href="#businesscase" style="color:var(--co);font-weight:600">business case calculator</a> voor drie indicatieve scenario's &#8212; inclusief een eerlijk laag scenario.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.27s"><button class="faq-q" onclick="tFaq(this)">Hoeveel uur werk ik als eigenaar?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Zeker het eerste jaar sta je veel op de vloer</strong> &#8212; daarna bepaal je zelf de balans tussen meewerken en aansturen. De urenknop in de calculator laat zien wat jouw inzet financieel doet.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.28s"><button class="faq-q" onclick="tFaq(this)">Hoeveel vrijheid heb ik binnen de formule?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>De formule ligt vast &#8212; daarbinnen is lokale ruimte.</strong> Merk, kernassortiment en kwaliteit zijn de basis; lokaal ondernemerschap wordt aangemoedigd. Zo voegde Camille in Apeldoorn Italiaans schepijs toe aan haar vestiging.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.29s"><button class="faq-q" onclick="tFaq(this)">Kan ik met een bestaande partner praten?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Graag zelfs.</strong> Verder in het traject brengen we je in contact met een van onze partners &#8212; stel ze alles wat je wilt weten, zonder ons erbij.</p></div></div>
-      <div class="faq-item reveal" style="transition-delay:.3s"><button class="faq-q" onclick="tFaq(this)">Heb ik een locatie nodig om te starten?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Nee &#8212; we zoeken samen.</strong> Coffee Fellows zoekt actief met jou naar de juiste A1-locatie: binnensteden, vliegvelden, stations en schoolcampussen.</p></div></div>
-      <p style="text-align:center;font-size:.88rem;color:var(--gr);margin-top:28px">Andere vraag? <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20een%20vraag%20over%20partner%20worden!" target="_blank" style="color:var(--co);font-weight:700">App ons gewoon</a> &#8212; je krijgt altijd persoonlijk antwoord.</p>
+      <div class="faq-item reveal" style="transition-delay:.26s"><button class="faq-q" onclick="tFaq(this)">Wat kan ik verdienen?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Dat hangt af van locatie, omzet en jouw eigen rol.</strong> Speel met onze <a href="#businesscase" style="color:var(--co);font-weight:600">business case calculator</a> voor drie indicatieve scenario's, inclusief een eerlijk laag scenario.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.27s"><button class="faq-q" onclick="tFaq(this)">Hoeveel uur werk ik als eigenaar?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Zeker het eerste jaar sta je veel op de vloer</strong> . Daarna bepaal je zelf de balans tussen meewerken en aansturen. De urenknop in de calculator laat zien wat jouw inzet financieel doet.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.28s"><button class="faq-q" onclick="tFaq(this)">Hoeveel vrijheid heb ik binnen de formule?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>De formule ligt vast, daarbinnen is lokale ruimte.</strong> Merk, kernassortiment en kwaliteit zijn de basis; lokaal ondernemerschap wordt aangemoedigd. Zo voegde Camille in Apeldoorn Italiaans schepijs toe aan haar vestiging.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.29s"><button class="faq-q" onclick="tFaq(this)">Kan ik met een bestaande partner praten?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Graag zelfs.</strong> Verder in het traject brengen we je in contact met een van onze partners. Stel ze alles wat je wilt weten, zonder ons erbij.</p></div></div>
+      <div class="faq-item reveal" style="transition-delay:.3s"><button class="faq-q" onclick="tFaq(this)">Heb ik een locatie nodig om te starten?<span class="faq-arr"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button><div class="faq-a"><p><strong>Nee, we zoeken samen.</strong> Coffee Fellows zoekt actief met jou naar de juiste A1-locatie: binnensteden, vliegvelden, stations en schoolcampussen.</p></div></div>
+      <p style="text-align:center;font-size:.88rem;color:var(--gr);margin-top:28px">Andere vraag? <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20een%20vraag%20over%20partner%20worden!" target="_blank" style="color:var(--co);font-weight:700">App ons gewoon</a> . Je krijgt altijd persoonlijk antwoord.</p>
     </div>
   </div>
 </section>
@@ -2404,7 +2404,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div>
           <div class="chiel-naam">Chiel Beckmann</div>
           <div class="chiel-rol">Coffee Fellows Nederland &middot; jouw aanspreekpunt</div>
-          <p class="chiel-quote">"Elk traject begint gewoon met een kop koffie. App me &#8212; je krijgt persoonlijk antwoord, meestal binnen een paar uur."</p>
+          <p class="chiel-quote">"Elk traject begint gewoon met een kop koffie. App me. Je krijgt persoonlijk antwoord, meestal binnen een paar uur."</p>
         </div>
       </div>
 
@@ -2498,8 +2498,8 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 <!-- CHAT WIDGET -->
 <div class="chat-widget" id="chatWidget">
   <div class="chat-balloon" id="chatBalloon">
-    <div class="chat-header"><div class="chat-av"><img src="img/inline2.jpg" alt="Chiel" style="width:100%;height:100%;object-fit:cover;object-position:center top"></div><div><div class="chat-name">Chiel &#8212; Coffee Fellows NL</div><div class="chat-sub">Partnerwerving Nederland</div></div></div>
-    <div id="chatMsg">Hoi! Vragen over partner worden? App me gerust &#8212; ik antwoord persoonlijk. &#9749;</div>
+    <div class="chat-header"><div class="chat-av"><img src="img/inline2.jpg" alt="Chiel" style="width:100%;height:100%;object-fit:cover;object-position:center top"></div><div><div class="chat-name">Chiel, Coffee Fellows NL</div><div class="chat-sub">Partnerwerving Nederland</div></div></div>
+    <div id="chatMsg">Hoi! Vragen over partner worden? App me gerust, ik antwoord persoonlijk. &#9749;</div>
   </div>
   <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20wil%20graag%20een%20vrijblijvende%20kennismaking%20plannen!" target="_blank" class="chat-btn" id="chatBtn" aria-label="WhatsApp Coffee Fellows">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
