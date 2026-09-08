@@ -551,15 +551,6 @@ footer{background:var(--dk);padding:42px 24px;text-align:center}
 
 
 /* ── RISICO/BELONING METER ─── */
-.rr-meter{margin:16px 0 20px;display:flex;flex-direction:column;gap:10px}
-.rr-row{display:flex;align-items:center;gap:10px}
-.rr-label-text{font-size:.72rem;font-weight:700;color:var(--gr);width:60px;flex-shrink:0;letter-spacing:.04em;text-transform:uppercase}
-.rr-track{flex:1;height:7px;background:var(--crd);border-radius:99px;overflow:hidden}
-.rr-fill{height:100%;border-radius:99px;transition:width .8s cubic-bezier(.16,1,.3,1)}
-.rr-fill.risk{background:linear-gradient(90deg,#22c55e,#86efac)}
-.rr-fill.risk.mid{background:linear-gradient(90deg,#f59e0b,#fcd34d)}
-.rr-fill.reward{background:linear-gradient(90deg,var(--col),var(--co))}
-.rr-score{font-size:.72rem;font-weight:700;color:var(--br);width:72px;text-align:right;flex-shrink:0}
 
 
 /* ── FRANCHISE TIJDLIJN PLANNER ─── */
@@ -1783,6 +1774,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 .day-strip-txt{min-width:0}
 .day-strip-img{width:230px;height:150px;object-fit:cover;border-radius:12px;flex-shrink:0}
 @media(max-width:700px){.day-strip-head{flex-direction:column-reverse;align-items:stretch;gap:16px}.day-strip-img{width:100%;height:180px}}
+.m-honest{font-size:.82rem;color:var(--gr);line-height:1.6;font-style:italic;margin:14px 0 18px;padding-left:12px;border-left:2px solid var(--crd)}
 </style>
 </head>
 <body>
@@ -1832,7 +1824,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <img src="img/inline0.avif" height="116" style="opacity:.9" alt="Coffee Fellows" onerror="this.style.display='none'">
     </div>
     <h1 class="hero-h1">Jij leeft je droom.<br><em>Wij staan achter je.</em></h1>
-    <p class="hero-sub">Koffie, bagels en een huiskamergevoel dat sinds 1999 in negen landen werkt. Volledige ondersteuning vanaf dag &#233;&#233;n &#8212; welkom in de Coffee Fellows familie.</p>
+    <p class="hero-sub">Misschien denk je al langer aan een eigen zaak. Bij Coffee Fellows run jij je eigen vestiging en bouw je je eigen team &#8212; met een formule achter je die dat sinds 1999 dagelijks doet. Horeca-ervaring is welkom, ondernemersmentaliteit telt zwaarder.</p>
     <div class="hero-btns">
       <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20wil%20graag%20een%20vrijblijvende%20kennismaking%20plannen!" target="_blank" class="btn-primary">Plan een vrijblijvende kennismaking</a>
       <a href="#modellen" class="btn-ghost">Bekijk de modellen</a>
@@ -1866,7 +1858,6 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
       <label><input type="checkbox" class="fitq"> Ik wil zelf actief in mijn zaak staan</label>
       <label><input type="checkbox" class="fitq"> Ik kan (of wil leren) leidinggeven</label>
       <label><input type="checkbox" class="fitq"> Ik wil ondernemen binnen een bewezen formule</label>
-      <label><input type="checkbox" class="fitq"> Ik beschik (op termijn) over &#8364;20.000 &#224; &#8364;75.000 eigen vermogen</label>
       <div class="fit-result" id="fitResult"></div>
     </div>
     <p class="fit-not reveal"><strong>Eerlijk is eerlijk &#8212; Coffee Fellows past waarschijnlijk niet bij je als</strong> je puur wilt investeren zonder zelf betrokken te zijn, geen mensen wilt aansturen, volledige conceptvrijheid zoekt, of horeca-uren niet in je leven passen.</p>
@@ -1964,8 +1955,8 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
 <section class="ben-sec" id="voordelen">
   <div class="container">
     <span class="s-tag" style="color:var(--col)">Waarom Coffee Fellows</span>
-    <h2 class="s-h2">Jij focust op je gasten.<br><em>Wij regelen de rest.</em></h2>
-    <p class="s-lead">Als sterke systeemgever en gevestigd merk staan we altijd achter je &#8212; van businessplan tot opening en iedere dag daarna.</p>
+    <h2 class="s-h2">Jij runt de zaak.<br><em>Je hoeft niet alles zelf uit te vinden.</em></h2>
+    <p class="s-lead">Personeel, gasten en de dagelijkse leiding blijven van jou &#8212; je wordt echt ondernemer. Wat wij meebrengen is de ervaring: locatie, formule, inkoop, training en begeleiding, zodat je niet iedere les zelf hoeft te betalen.</p>
     <div class="ben-grid-9">
 <div class="bc9 reveal" style="transition-delay:0.00s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="bc9-title">Persoonlijke begeleiding</div><div class="bc9-body">Een ervaren Area Manager staat naast je &#8212; v&#243;&#243;r de opening &#233;n daarna, met een vast aanspreekpunt en periodieke vestigingsbezoeken.</div><ul class="bc9-list"><li>Dedicated Area Manager per locatie</li><li>Vast aanspreekpunt na opening</li><li>Gezamenlijke omzetsturing</li><li>Snelle, directe communicatie</li></ul></div>
 <div class="bc9 reveal" style="transition-delay:0.05s"><div class="bc9-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="bc9-title">Locatie &amp; inrichting</div><div class="bc9-body">A1-locaties: binnensteden, vliegvelden, stations. 100&#8211;200 m&#178;, veel glas en lichtinval &#8212; &#34;Feel at Home&#34; in elk detail.</div><ul class="bc9-list"><li>Actieve locatiescout</li><li>Ondersteuning bij huuronderhandeling</li><li>Gecertificeerde winkelinrichters</li><li>Herkenbaar designconcept</li></ul></div>
@@ -2107,10 +2098,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
             <div class="cr"><span class="cr-l">Eigen vermogen</span><span class="cr-v">&#8364;20.000 &#8211; &#8364;75.000</span></div>
             <div class="cr"><span class="cr-l">Investeringsvolume</span><span class="cr-v">&#8364;195k &#8211; &#8364;350k</span></div>
           </div>
-          <div class="rr-meter">
-              <div class="rr-row"><span class="rr-label-text">Risico</span><div class="rr-track"><div class="rr-fill risk mid" style="width:55%"></div></div><span class="rr-score">Gemiddeld</span></div>
-              <div class="rr-row"><span class="rr-label-text">Beloning</span><div class="rr-track"><div class="rr-fill reward" style="width:90%"></div></div><span class="rr-score">Hoog</span></div>
-            </div>
+          <p class="m-honest">We rekenen liever &#233;&#233;n locatie te veel door dan &#233;&#233;n te snel goed. Gaat een locatie niet werken, dan zeggen we dat &#8212; ook als jij enthousiast bent.</p>
             <ul class="m-feats"><li>Volledig eigenaarschap van je vestiging</li><li>Gebruik van alle Coffee Fellows-merken</li><li>Compleet ondersteuningspakket</li><li>Groei naar meerdere locaties</li></ul>
         </div>
       </div>
@@ -2311,7 +2299,7 @@ html.no-js .reveal,html.no-js .rl,html.no-js .rr{opacity:1 !important;transform:
         <div class="kans-blok reveal">
           <div class="kans-badge">&#128273; Direct starten?</div>
           <div class="kans-t">In Enschede staat een draaiende vestiging klaar voor overname</div>
-          <p class="kans-b">Instappen in een lopende zaak met bestaand team en vaste gasten &#8212; zo begon Camille ook. Wees er snel bij.</p>
+          <p class="kans-b">Instappen in een lopende zaak met bestaand team en vaste gasten &#8212; zo begon Camille ook.</p>
           <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20heb%20interesse%20in%20de%20overname%20van%20de%20vestiging%20in%20Enschede!" target="_blank" class="kans-cta">Vraag naar de overname &#8594;</a>
         </div>
         <div>
@@ -2842,8 +2830,9 @@ document.querySelectorAll('a[href="#businesscase"]').forEach(function(a){
   if (!boxes.length || !out) return;
   boxes.forEach(function(b){ b.addEventListener('change', function(){
     var n = document.querySelectorAll('.fitq:checked').length;
-    if (n >= 4) out.innerHTML = n + ' van 5 &#8212; dan maken we graag kennis. <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20deed%20de%20check%20op%20jullie%20site%20en%20wil%20graag%20kennismaken!" target="_blank">Plan een vrijblijvende kennismaking &#8594;</a>';
-    else if (n > 0) out.textContent = n + ' van 5 aangevinkt';
+    var totaal = boxes.length;
+    if (n >= totaal - 1) out.innerHTML = n + ' van ' + totaal + ' &#8212; dan maken we graag kennis. <a href="https://wa.me/31854863346?text=Hoi%2C%20ik%20deed%20de%20check%20op%20jullie%20site%20en%20wil%20graag%20kennismaken!" target="_blank">Plan een vrijblijvende kennismaking &#8594;</a>';
+    else if (n > 0) out.textContent = n + ' van ' + totaal + ' aangevinkt';
     else out.textContent = '';
   }); });
 })();
